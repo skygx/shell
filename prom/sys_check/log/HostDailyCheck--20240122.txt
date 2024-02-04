@@ -1,0 +1,968 @@
+
+
+系统巡检脚本：Version 2020-03-16
+
+
+############################ 系统检查 ############################
+ 系统：GNU/Linux
+ 发行版本：CentOS Linux release 7.9.2009 (Core)
+ 内核：3.10.0-1160.53.1.el7.x86_64
+ 主机名：prom
+ SELinux：disabled
+语言/编码：en_US.UTF-8
+ 当前时间：2024-01-22 14:40:31
+ 最后启动：2024-01-22 10:51
+ 运行时间：
+
+
+############################ CPU检查 #############################
+物理CPU个数:2
+逻辑CPU个数:4
+每CPU核心数:2
+ CPU型号:AMD Ryzen 5 PRO 2500U w/ Radeon Vega Mobile Gfx
+ CPU架构:x86_64
+
+
+############################ 内存检查 ############################
+              total        used        free      shared  buff/cache   available
+Mem:           7.6G        1.6G        4.5G         15M        1.5G        5.7G
+Swap:            0B          0B          0B
+
+
+############################ 磁盘检查 ############################
+Filesystem               Type      |  Size   Used  Avail  Use%  |  Inodes  IUsed  IFree  IUse%  |  Mounted
+devtmpfs                 devtmpfs  |  3.8G   0     3.8G   0%    |  973K    385    973K   1%     |  /dev
+tmpfs                    tmpfs     |  3.9G   0     3.9G   0%    |  976K    1      976K   1%     |  /dev/shm
+tmpfs                    tmpfs     |  3.9G   0     3.9G   0%    |  976K    1.6K   974K   1%     |  /run
+tmpfs                    tmpfs     |  3.9G   0     3.9G   0%    |  976K    16     976K   1%     |  /sys/fs/cgroup
+tmpfs                    tmpfs     |  3.9G   13M   3.8G   1%    |  976K    1      976K   1%     |  /dev/shm
+tmpfs                    tmpfs     |  3.9G   13M   3.8G   1%    |  976K    1.6K   974K   1%     |  /run
+tmpfs                    tmpfs     |  3.9G   13M   3.8G   1%    |  976K    16     976K   1%     |  /sys/fs/cgroup
+tmpfs                    tmpfs     |  3.9G   0     3.9G   0%    |  976K    1      976K   1%     |  /dev/shm
+tmpfs                    tmpfs     |  3.9G   0     3.9G   0%    |  976K    1.6K   974K   1%     |  /run
+tmpfs                    tmpfs     |  3.9G   0     3.9G   0%    |  976K    16     976K   1%     |  /sys/fs/cgroup
+/dev/mapper/centos-root  xfs       |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /
+/dev/sda1                xfs       |  1014M  189M  826M   19%   |  512K    335    512K   1%     |  /boot
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/d6ac5698312db166553acfd0337dbc4b8e454edacaecf2e3e065509bf6ab4bd6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/f99ad6c58d0587456611e453281ece5fe7a19541135f753b07c86c4d26178ff1/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/5a28634637ebf68853b895ddd11df246f24eb490a501ecdf38548628aed28f4f/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+tmpfs                    tmpfs     |  781M   0     781M   0%    |  976K    1      976K   1%     |  /run/user/0
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/ac4b8297d5f6e915f336e2e0db0c454a9910ed4cb82f055a455180a41b6b54e6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/6d19b1e9e60daf7fdaaf6082298eb7c930bc1be37be02bcadc3e5781ed1f7c5d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/1d995e8fc6d274ea022d24ce6393e4bb3d436e9a8f186f173f04cbc07561491d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/dd63be6b1dead1a1f94b3cad8924845c0f63362009d341c00f2e02eff4be6534/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/ac4b8297d5f6e915f336e2e0db0c454a9910ed4cb82f055a455180a41b6b54e6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/6d19b1e9e60daf7fdaaf6082298eb7c930bc1be37be02bcadc3e5781ed1f7c5d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/1d995e8fc6d274ea022d24ce6393e4bb3d436e9a8f186f173f04cbc07561491d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/dd63be6b1dead1a1f94b3cad8924845c0f63362009d341c00f2e02eff4be6534/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/ac4b8297d5f6e915f336e2e0db0c454a9910ed4cb82f055a455180a41b6b54e6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/6d19b1e9e60daf7fdaaf6082298eb7c930bc1be37be02bcadc3e5781ed1f7c5d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/1d995e8fc6d274ea022d24ce6393e4bb3d436e9a8f186f173f04cbc07561491d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/dd63be6b1dead1a1f94b3cad8924845c0f63362009d341c00f2e02eff4be6534/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/ac4b8297d5f6e915f336e2e0db0c454a9910ed4cb82f055a455180a41b6b54e6/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/6d19b1e9e60daf7fdaaf6082298eb7c930bc1be37be02bcadc3e5781ed1f7c5d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/1d995e8fc6d274ea022d24ce6393e4bb3d436e9a8f186f173f04cbc07561491d/merged
+overlay                  overlay   |  59G    48G   12G    81%   |  24M     1.4M   23M    6%     |  /var/lib/docker/overlay2/dd63be6b1dead1a1f94b3cad8924845c0f63362009d341c00f2e02eff4be6534/merged
+
+
+############################ 网络检查 ############################
+ens33: 192.168.226.20/24 
+virbr0: 192.168.122.1/24 
+virbr0-nic: 
+br-4b2489c64f5d: 172.21.0.1/16 
+br-5172cd097167: 172.27.0.1/16 
+br-a14fb9aa6dda: 172.20.0.1/16 
+br-baba5d7ea00d: 172.19.0.1/16 
+docker0: 172.17.0.1/16 
+br-f7fb8a664b5e: 172.18.0.1/16 
+br-0fa831773ef7: 172.22.0.1/16 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+网关：192.168.226.2 
+ DNS：192.168.226.20,219.141.136.10,114.114.114.114,8.8.8.8
+
+
+############################ 监听检查 ############################
+Netid  State   Recv-Q  Send-Q  Local               Address:Port  Peer  Address:Port
+udp    UNCONN  0       0       192.168.122.1:53    *:*
+udp    UNCONN  0       0       *%virbr0:67         *:*
+udp    UNCONN  0       0       *:111               *:*
+udp    UNCONN  0       0       172.22.0.1:123      *:*
+udp    UNCONN  0       0       172.18.0.1:123      *:*
+udp    UNCONN  0       0       172.17.0.1:123      *:*
+udp    UNCONN  0       0       172.19.0.1:123      *:*
+udp    UNCONN  0       0       172.20.0.1:123      *:*
+udp    UNCONN  0       0       172.27.0.1:123      *:*
+udp    UNCONN  0       0       172.21.0.1:123      *:*
+udp    UNCONN  0       0       192.168.122.1:123   *:*
+udp    UNCONN  0       0       192.168.226.20:123  *:*
+udp    UNCONN  0       0       127.0.0.1:123       *:*
+udp    UNCONN  0       0       *:123               *:*
+udp    UNCONN  0       0       *:514               *:*
+udp    UNCONN  0       0       *:881               *:*
+udp    UNCONN  0       0       [::]:111            [::]:*
+udp    UNCONN  0       0       [::]:123            [::]:*
+udp    UNCONN  0       0       [::]:514            [::]:*
+udp    UNCONN  0       0       [::]:881            [::]:*
+tcp    LISTEN  0       128     *:84                *:*
+tcp    LISTEN  0       5       192.168.122.1:53    *:*
+tcp    LISTEN  0       128     *:22                *:*
+tcp    LISTEN  0       128     *:88                *:*
+tcp    LISTEN  0       128     *:10010             *:*
+tcp    LISTEN  0       128     *:8090              *:*
+tcp    LISTEN  0       128     *:443               *:*
+tcp    LISTEN  0       128     *:8091              *:*
+tcp    LISTEN  0       128     *:9090              *:*
+tcp    LISTEN  0       128     *:10050             *:*
+tcp    LISTEN  0       128     *:10051             *:*
+tcp    LISTEN  0       128     *:8100              *:*
+tcp    LISTEN  0       128     *:8101              *:*
+tcp    LISTEN  0       128     *:8999              *:*
+tcp    LISTEN  0       128     *:9099              *:*
+tcp    LISTEN  0       128     *:3308              *:*
+tcp    LISTEN  0       128     *:6380              *:*
+tcp    LISTEN  0       128     *:111               *:*
+tcp    LISTEN  0       128     *:80                *:*
+tcp    LISTEN  0       128     *:81                *:*
+tcp    LISTEN  0       128     *:82                *:*
+tcp    LISTEN  0       128     *:83                *:*
+tcp    LISTEN  0       128     [::]:22             [::]:*
+tcp    LISTEN  0       128     [::]:443            [::]:*
+tcp    LISTEN  0       64      [::]:6556           [::]:*
+tcp    LISTEN  0       128     [::]:10050          [::]:*
+tcp    LISTEN  0       128     [::]:10052          [::]:*
+tcp    LISTEN  0       128     [::]:111            [::]:*
+tcp    LISTEN  0       128     [::]:80             [::]:*
+
+
+############################ 进程检查 ############################
+
+内存占用TOP10
+-------------
+PID   %MEM  RSS     COMMAND
+3093  3.5   282708  mysqld
+2979  2.5   202112  /prometheus/prometheus
+1329  1.0   84472   /usr/bin/dockerd
+2784  0.8   67768   /usr/bin/java
+3129  0.7   62996   /usr/bin/cadvisor
+1097  0.5   40776   /usr/bin/containerd
+1669  0.3   31600   /bin/docker-driver
+750   0.3   29824   /usr/bin/python2
+3005  0.3   26368   /portainer
+3106  0.2   20204   /usr/bin/python3.6
+
+CPU占用TOP10
+------------
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+ 33756 root      20   0  108092    688    588 S   0.0  0.0   0:00.00 tail -11
+ 33755 root      20   0  108064    676    576 S   0.0  0.0   0:00.00 head -17
+ 33754 root      20   0  162132   2356   1612 R   6.2  0.0   0:00.01 top b -n1
+ 33455 root      20   0  113556   1864   1380 S   0.0  0.0   0:00.06 sh -x health_all.sh
+ 33412 root      20   0       0      0      0 S   0.0  0.0   0:00.02 [kworker/2:0]
+ 32407 root      20   0       0      0      0 S   0.0  0.0   0:00.08 [kworker/3:2]
+ 32131 root      20   0       0      0      0 S   0.0  0.0   0:00.01 [kworker/0:2]
+ 31209 root      20   0       0      0      0 S   0.0  0.0   0:00.01 [kworker/0:1]
+ 30247 root      20   0       0      0      0 S   0.0  0.0   0:00.39 [kworker/3:1]
+ 30126 root      20   0       0      0      0 S   0.0  0.0   0:00.12 [kworker/2:2]
+
+
+############################ 服务检查 ############################
+
+服务配置
+--------
+atd.service                                  enabled
+auditd.service                               enabled
+autovt@.service                              enabled
+crond.service                                enabled
+dbus-org.fedoraproject.FirewallD1.service    enabled
+dbus-org.freedesktop.NetworkManager.service  enabled
+dbus-org.freedesktop.nm-dispatcher.service   enabled
+docker.service                               enabled
+firewalld.service                            enabled
+getty@.service                               enabled
+ipmi.service                                 enabled
+irqbalance.service                           enabled
+iscsi-onboot.service                         enabled
+iscsi.service                                enabled
+kdump.service                                enabled
+libvirtd.service                             enabled
+lvm2-monitor.service                         enabled
+mdmonitor.service                            enabled
+microcode.service                            enabled
+multipathd.service                           enabled
+netcf-transaction.service                    enabled
+NetworkManager-dispatcher.service            enabled
+NetworkManager-wait-online.service           enabled
+NetworkManager.service                       enabled
+ntpd.service                                 enabled
+omd.service                                  enabled
+rhel-autorelabel.service                     enabled
+rhel-configure.service                       enabled
+rhel-dmesg.service                           enabled
+rhel-domainname.service                      enabled
+rhel-import-state.service                    enabled
+rhel-loadmodules.service                     enabled
+rhel-readonly.service                        enabled
+rpcbind.service                              enabled
+rsyslog.service                              enabled
+sshd.service                                 enabled
+sysstat.service                              enabled
+systemd-readahead-collect.service            enabled
+systemd-readahead-drop.service               enabled
+systemd-readahead-replay.service             enabled
+tuned.service                                enabled
+udisks2.service                              enabled
+xinetd.service                               enabled
+zabbix-agent.service                         enabled
+zabbix-agent2.service                        enabled
+
+正在运行的服务
+--------------
+atd.service              loaded active running Job spooling tools
+auditd.service           loaded active running Security Auditing Service
+containerd.service       loaded active running containerd container runtime
+crond.service            loaded active running Command Scheduler
+dbus.service             loaded active running D-Bus System Message Bus
+docker.service           loaded active running Docker Application Container Engine
+firewalld.service        loaded active running firewalld - dynamic firewall daemon
+getty@tty1.service       loaded active running Getty on tty1
+gssproxy.service         loaded active running GSSAPI Proxy Daemon
+irqbalance.service       loaded active running irqbalance daemon
+libvirtd.service         loaded active running Virtualization daemon
+lvm2-lvmetad.service     loaded active running LVM2 metadata daemon
+NetworkManager.service   loaded active running Network Manager
+nginx.service            loaded active running NGINX Plus - high performance web server
+ntpd.service             loaded active running Network Time Service
+polkit.service           loaded active running Authorization Manager
+rpcbind.service          loaded active running RPC bind service
+rsyslog.service          loaded active running System Logging Service
+sshd.service             loaded active running OpenSSH server daemon
+systemd-journald.service loaded active running Journal Service
+systemd-logind.service   loaded active running Login Service
+systemd-udevd.service    loaded active running udev Kernel Device Manager
+tuned.service            loaded active running Dynamic System Tuning Daemon
+xinetd.service           loaded active running Xinetd A Powerful Replacement For Inetd
+zabbix-agent.service     loaded active running Zabbix Agent
+zabbix-agent2.service    loaded active running Zabbix Agent 2
+
+
+############################ 自启动检查 ##########################
+touch /var/lock/subsys/local
+
+
+############################ 登录检查 ############################
+root     pts/0        192.168.226.1    Mon Jan 22 12:34   still logged in   
+root     pts/1        192.168.226.1    Mon Jan 22 11:27 - 14:05  (02:37)    
+root     pts/0        192.168.226.1    Mon Jan 22 10:54 - 11:56  (01:02)    
+reboot   system boot  3.10.0-1160.53.1 Mon Jan 22 10:51 - 14:40  (03:49)    
+root     pts/1        192.168.226.1    Mon Jan 22 10:28 - down   (00:06)    
+root     pts/0        192.168.226.1    Mon Jan 22 08:57 - down   (01:37)    
+reboot   system boot  3.10.0-1160.53.1 Mon Jan 22 08:27 - 10:34  (02:06)    
+root     pts/1        192.168.226.1    Fri Jan 19 16:28 - down   (00:59)    
+root     pts/0        192.168.226.1    Fri Jan 19 10:36 - 16:58  (06:22)    
+root     pts/2        192.168.226.1    Fri Jan 19 09:47 - 11:02  (01:15)    
+
+
+############################ 计划任务检查 ########################
+root
+--------
+0 16 * * * /usr/bin/sh /root/shell_test/sys_check/cron_check.sh
+30 9,12 * * * /usr/bin/sh /root/shell_test/sys_check/cron_check.sh
+#* */1 * * * /usr/sbin/ntpdate ntp1.aliyun.com
+
+-rw-r--r--.  1  root  root  128  Jan  14  2022  /etc/cron.d/0hourly
+-rw-------.  1  root  root  235  Apr  1   2020  /etc/cron.d/sysstat
+-rw-r--r--.  1  root  root  108  Sep  30  2020  /etc/cron.d/raid-check
+-rwx------.  1  root  root  219  Apr  1   2020  /etc/cron.daily/logrotate
+-rwxr-xr-x.  1  root  root  618  Oct  30  2018  /etc/cron.daily/man-db.cron
+-rwxr-xr-x   1  root  root  744  Nov  7   2016  /etc/cron.daily/snapper
+-rwxr-xr-x   1  root  root  434  Aug  16  2018  /etc/cron.daily/0logwatch
+-rw-------.  1  root  root  0    Jan  14  2022  /etc/cron.deny
+-rwxr-xr-x.  1  root  root  392  Jan  14  2022  /etc/cron.hourly/0anacron
+-rwxr-x---   1  root  root  172  Jan  10  2023  /etc/cron.hourly/awstats
+-rwxr-xr-x   1  root  root  514  Nov  7   2016  /etc/cron.hourly/snapper
+-rw-r--r--.  1  root  root  451  Jun  10  2014  /etc/crontab
+
+
+############################ 用户检查 ############################
+/etc/passwd 最后修改时间：2023-12-21 14:46:02 (31 天 23 小时前)
+
+特权用户
+--------
+root
+
+用户列表
+--------
+用户名  UID   GID   HOME         SHELL      最后一次登录
+root    0     0     /root        /bin/bash  2024-01-22_12:34:00
+linux   1000  1000  /home/linux  /bin/bash  2024-01-08_16:07:00
+test    1001  1001  /home/test   /bin/bash  从未登录过
+
+空密码用户
+----------
+test
+
+相同ID的用户
+------------
+
+
+############################ 密码检查 ############################
+
+密码过期检查
+------------
+root            永不过期
+linux           永不过期
+test            永不过期
+
+密码策略检查
+------------
+PASS_MAX_DAYS	99999
+PASS_MIN_DAYS	0
+PASS_MIN_LEN	5
+PASS_WARN_AGE	7
+
+
+############################ Sudoers检查 #########################
+root	ALL=(ALL) 	ALL
+linux	ALL=(ALL)       NOPASSWD:ALL
+%wheel	ALL=(ALL)	ALL
+
+
+
+############################ JDK检查 #############################
+java version "1.8.0_291"
+Java(TM) SE Runtime Environment (build 1.8.0_291-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.291-b10, mixed mode)
+JAVA_HOME="/opt/jdk"
+
+
+############################ 防火墙检查 ##########################
+iptables: inactive
+
+/etc/sysconfig/iptables
+-----------------------
+# Generated by iptables-save v1.4.21 on Fri Nov 10 09:26:54 2023
+*nat
+:PREROUTING ACCEPT [4793:284476]
+:INPUT ACCEPT [3324:199280]
+:OUTPUT ACCEPT [722:44743]
+:POSTROUTING ACCEPT [723:44803]
+:DOCKER - [0:0]
+:OUTPUT_direct - [0:0]
+:POSTROUTING_ZONES - [0:0]
+:POSTROUTING_ZONES_SOURCE - [0:0]
+:POSTROUTING_direct - [0:0]
+:POST_docker - [0:0]
+:POST_docker_allow - [0:0]
+:POST_docker_deny - [0:0]
+:POST_docker_log - [0:0]
+:POST_public - [0:0]
+:POST_public_allow - [0:0]
+:POST_public_deny - [0:0]
+:POST_public_log - [0:0]
+:PREROUTING_ZONES - [0:0]
+:PREROUTING_ZONES_SOURCE - [0:0]
+:PREROUTING_direct - [0:0]
+:PRE_docker - [0:0]
+:PRE_docker_allow - [0:0]
+:PRE_docker_deny - [0:0]
+:PRE_docker_log - [0:0]
+:PRE_public - [0:0]
+:PRE_public_allow - [0:0]
+:PRE_public_deny - [0:0]
+:PRE_public_log - [0:0]
+-A PREROUTING -j PREROUTING_direct
+-A PREROUTING -j PREROUTING_ZONES_SOURCE
+-A PREROUTING -j PREROUTING_ZONES
+-A PREROUTING -m addrtype --dst-type LOCAL -j DOCKER
+-A OUTPUT -j OUTPUT_direct
+-A OUTPUT ! -d 127.0.0.0/8 -m addrtype --dst-type LOCAL -j DOCKER
+-A POSTROUTING -s 172.17.0.0/16 ! -o docker0 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.0/16 ! -o br-b3a6b89b76b5 -j MASQUERADE
+-A POSTROUTING -s 172.18.0.0/16 ! -o br-a7b9cdc2aa04 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.0/16 ! -o br-7eb9d7fbd7b9 -j MASQUERADE
+-A POSTROUTING -s 172.20.0.0/16 ! -o br-7e913aac1abd -j MASQUERADE
+-A POSTROUTING -s 192.168.122.0/24 -d 224.0.0.0/24 -j RETURN
+-A POSTROUTING -s 192.168.122.0/24 -d 255.255.255.255/32 -j RETURN
+-A POSTROUTING -s 192.168.122.0/24 ! -d 192.168.122.0/24 -p tcp -j MASQUERADE --to-ports 1024-65535
+-A POSTROUTING -s 192.168.122.0/24 ! -d 192.168.122.0/24 -p udp -j MASQUERADE --to-ports 1024-65535
+-A POSTROUTING -s 192.168.122.0/24 ! -d 192.168.122.0/24 -j MASQUERADE
+-A POSTROUTING -j POSTROUTING_direct
+-A POSTROUTING -j POSTROUTING_ZONES_SOURCE
+-A POSTROUTING -j POSTROUTING_ZONES
+-A POSTROUTING -s 172.21.0.2/32 -d 172.21.0.2/32 -p tcp -m tcp --dport 16063 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.2/32 -d 172.19.0.2/32 -p tcp -m tcp --dport 9000 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.2/32 -d 172.21.0.2/32 -p tcp -m tcp --dport 6063 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.2/32 -d 172.19.0.2/32 -p tcp -m tcp --dport 8000 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.3/32 -d 172.21.0.3/32 -p tcp -m tcp --dport 16061 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.3/32 -d 172.19.0.3/32 -p tcp -m tcp --dport 9093 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.3/32 -d 172.21.0.3/32 -p tcp -m tcp --dport 6061 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.4/32 -d 172.19.0.4/32 -p tcp -m tcp --dport 3000 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.4/32 -d 172.21.0.4/32 -p tcp -m tcp --dport 16066 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.5/32 -d 172.19.0.5/32 -p tcp -m tcp --dport 9100 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.6/32 -d 172.19.0.6/32 -p tcp -m tcp --dport 9090 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.5/32 -d 172.21.0.5/32 -p tcp -m tcp --dport 16065 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.7/32 -d 172.19.0.7/32 -p tcp -m tcp --dport 9115 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.6/32 -d 172.21.0.6/32 -p tcp -m tcp --dport 16064 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.8/32 -d 172.19.0.8/32 -p tcp -m tcp --dport 8081 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.7/32 -d 172.21.0.7/32 -p tcp -m tcp --dport 16062 -j MASQUERADE
+-A POSTROUTING -s 172.19.0.9/32 -d 172.19.0.9/32 -p tcp -m tcp --dport 8080 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.4/32 -d 172.21.0.4/32 -p tcp -m tcp --dport 6066 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.5/32 -d 172.21.0.5/32 -p tcp -m tcp --dport 6065 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.6/32 -d 172.21.0.6/32 -p tcp -m tcp --dport 6064 -j MASQUERADE
+-A POSTROUTING -s 172.21.0.7/32 -d 172.21.0.7/32 -p tcp -m tcp --dport 6062 -j MASQUERADE
+-A DOCKER -i docker0 -j RETURN
+-A DOCKER -i br-b3a6b89b76b5 -j RETURN
+-A DOCKER -i br-a7b9cdc2aa04 -j RETURN
+-A DOCKER -i br-7eb9d7fbd7b9 -j RETURN
+-A DOCKER -i br-7e913aac1abd -j RETURN
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16063 -j DNAT --to-destination 172.21.0.2:16063
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 8101 -j DNAT --to-destination 172.19.0.2:9000
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6063 -j DNAT --to-destination 172.21.0.2:6063
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 8100 -j DNAT --to-destination 172.19.0.2:8000
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16061 -j DNAT --to-destination 172.21.0.3:16061
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 9093 -j DNAT --to-destination 172.19.0.3:9093
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6061 -j DNAT --to-destination 172.21.0.3:6061
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 3000 -j DNAT --to-destination 172.19.0.4:3000
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16066 -j DNAT --to-destination 172.21.0.4:16066
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 9100 -j DNAT --to-destination 172.19.0.5:9100
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 9090 -j DNAT --to-destination 172.19.0.6:9090
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16065 -j DNAT --to-destination 172.21.0.5:16065
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 9115 -j DNAT --to-destination 172.19.0.7:9115
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16064 -j DNAT --to-destination 172.21.0.6:16064
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 3001 -j DNAT --to-destination 172.19.0.8:8081
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16062 -j DNAT --to-destination 172.21.0.7:16062
+-A DOCKER ! -i br-b3a6b89b76b5 -p tcp -m tcp --dport 8090 -j DNAT --to-destination 172.19.0.9:8080
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6066 -j DNAT --to-destination 172.21.0.4:6066
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6065 -j DNAT --to-destination 172.21.0.5:6065
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6064 -j DNAT --to-destination 172.21.0.6:6064
+-A DOCKER ! -i br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6062 -j DNAT --to-destination 172.21.0.7:6062
+-A POSTROUTING_ZONES -o docker0 -g POST_docker
+-A POSTROUTING_ZONES -o br-b3a6b89b76b5 -g POST_docker
+-A POSTROUTING_ZONES -o br-a7b9cdc2aa04 -g POST_docker
+-A POSTROUTING_ZONES -o br-7eb9d7fbd7b9 -g POST_docker
+-A POSTROUTING_ZONES -o br-7e913aac1abd -g POST_docker
+-A POSTROUTING_ZONES -o ens33 -g POST_public
+-A POSTROUTING_ZONES -g POST_public
+-A POST_docker -j POST_docker_log
+-A POST_docker -j POST_docker_deny
+-A POST_docker -j POST_docker_allow
+-A POST_public -j POST_public_log
+-A POST_public -j POST_public_deny
+-A POST_public -j POST_public_allow
+-A PREROUTING_ZONES -i docker0 -g PRE_docker
+-A PREROUTING_ZONES -i br-b3a6b89b76b5 -g PRE_docker
+-A PREROUTING_ZONES -i br-a7b9cdc2aa04 -g PRE_docker
+-A PREROUTING_ZONES -i br-7eb9d7fbd7b9 -g PRE_docker
+-A PREROUTING_ZONES -i br-7e913aac1abd -g PRE_docker
+-A PREROUTING_ZONES -i ens33 -g PRE_public
+-A PREROUTING_ZONES -g PRE_public
+-A PRE_docker -j PRE_docker_log
+-A PRE_docker -j PRE_docker_deny
+-A PRE_docker -j PRE_docker_allow
+-A PRE_public -j PRE_public_log
+-A PRE_public -j PRE_public_deny
+-A PRE_public -j PRE_public_allow
+COMMIT
+# Completed on Fri Nov 10 09:26:54 2023
+# Generated by iptables-save v1.4.21 on Fri Nov 10 09:26:54 2023
+*mangle
+:PREROUTING ACCEPT [83032:84677445]
+:INPUT ACCEPT [69556:81501875]
+:FORWARD ACCEPT [13476:3175570]
+:OUTPUT ACCEPT [68463:72907161]
+:POSTROUTING ACCEPT [81939:76082731]
+:FORWARD_direct - [0:0]
+:INPUT_direct - [0:0]
+:OUTPUT_direct - [0:0]
+:POSTROUTING_direct - [0:0]
+:PREROUTING_ZONES - [0:0]
+:PREROUTING_ZONES_SOURCE - [0:0]
+:PREROUTING_direct - [0:0]
+:PRE_docker - [0:0]
+:PRE_docker_allow - [0:0]
+:PRE_docker_deny - [0:0]
+:PRE_docker_log - [0:0]
+:PRE_public - [0:0]
+:PRE_public_allow - [0:0]
+:PRE_public_deny - [0:0]
+:PRE_public_log - [0:0]
+-A PREROUTING -j PREROUTING_direct
+-A PREROUTING -j PREROUTING_ZONES_SOURCE
+-A PREROUTING -j PREROUTING_ZONES
+-A INPUT -j INPUT_direct
+-A FORWARD -j FORWARD_direct
+-A OUTPUT -j OUTPUT_direct
+-A POSTROUTING -o virbr0 -p udp -m udp --dport 68 -j CHECKSUM --checksum-fill
+-A POSTROUTING -j POSTROUTING_direct
+-A PREROUTING_ZONES -i docker0 -g PRE_docker
+-A PREROUTING_ZONES -i br-b3a6b89b76b5 -g PRE_docker
+-A PREROUTING_ZONES -i br-a7b9cdc2aa04 -g PRE_docker
+-A PREROUTING_ZONES -i br-7eb9d7fbd7b9 -g PRE_docker
+-A PREROUTING_ZONES -i br-7e913aac1abd -g PRE_docker
+-A PREROUTING_ZONES -i ens33 -g PRE_public
+-A PREROUTING_ZONES -g PRE_public
+-A PRE_docker -j PRE_docker_log
+-A PRE_docker -j PRE_docker_deny
+-A PRE_docker -j PRE_docker_allow
+-A PRE_public -j PRE_public_log
+-A PRE_public -j PRE_public_deny
+-A PRE_public -j PRE_public_allow
+COMMIT
+# Completed on Fri Nov 10 09:26:54 2023
+# Generated by iptables-save v1.4.21 on Fri Nov 10 09:26:54 2023
+*security
+:INPUT ACCEPT [69578:81504666]
+:FORWARD ACCEPT [13476:3175570]
+:OUTPUT ACCEPT [68494:72909363]
+:FORWARD_direct - [0:0]
+:INPUT_direct - [0:0]
+:OUTPUT_direct - [0:0]
+-A INPUT -j INPUT_direct
+-A FORWARD -j FORWARD_direct
+-A OUTPUT -j OUTPUT_direct
+COMMIT
+# Completed on Fri Nov 10 09:26:54 2023
+# Generated by iptables-save v1.4.21 on Fri Nov 10 09:26:54 2023
+*raw
+:PREROUTING ACCEPT [83032:84677445]
+:OUTPUT ACCEPT [68463:72907161]
+:OUTPUT_direct - [0:0]
+:PREROUTING_ZONES - [0:0]
+:PREROUTING_ZONES_SOURCE - [0:0]
+:PREROUTING_direct - [0:0]
+:PRE_docker - [0:0]
+:PRE_docker_allow - [0:0]
+:PRE_docker_deny - [0:0]
+:PRE_docker_log - [0:0]
+:PRE_public - [0:0]
+:PRE_public_allow - [0:0]
+:PRE_public_deny - [0:0]
+:PRE_public_log - [0:0]
+-A PREROUTING -j PREROUTING_direct
+-A PREROUTING -j PREROUTING_ZONES_SOURCE
+-A PREROUTING -j PREROUTING_ZONES
+-A OUTPUT -j OUTPUT_direct
+-A PREROUTING_ZONES -i docker0 -g PRE_docker
+-A PREROUTING_ZONES -i br-b3a6b89b76b5 -g PRE_docker
+-A PREROUTING_ZONES -i br-a7b9cdc2aa04 -g PRE_docker
+-A PREROUTING_ZONES -i br-7eb9d7fbd7b9 -g PRE_docker
+-A PREROUTING_ZONES -i br-7e913aac1abd -g PRE_docker
+-A PREROUTING_ZONES -i ens33 -g PRE_public
+-A PREROUTING_ZONES -g PRE_public
+-A PRE_docker -j PRE_docker_log
+-A PRE_docker -j PRE_docker_deny
+-A PRE_docker -j PRE_docker_allow
+-A PRE_public -j PRE_public_log
+-A PRE_public -j PRE_public_deny
+-A PRE_public -j PRE_public_allow
+COMMIT
+# Completed on Fri Nov 10 09:26:54 2023
+# Generated by iptables-save v1.4.21 on Fri Nov 10 09:26:54 2023
+*filter
+:INPUT ACCEPT [0:0]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [260:303889]
+:DOCKER - [0:0]
+:DOCKER-ISOLATION-STAGE-1 - [0:0]
+:DOCKER-ISOLATION-STAGE-2 - [0:0]
+:DOCKER-USER - [0:0]
+:FORWARD_IN_ZONES - [0:0]
+:FORWARD_IN_ZONES_SOURCE - [0:0]
+:FORWARD_OUT_ZONES - [0:0]
+:FORWARD_OUT_ZONES_SOURCE - [0:0]
+:FORWARD_direct - [0:0]
+:FWDI_docker - [0:0]
+:FWDI_docker_allow - [0:0]
+:FWDI_docker_deny - [0:0]
+:FWDI_docker_log - [0:0]
+:FWDI_public - [0:0]
+:FWDI_public_allow - [0:0]
+:FWDI_public_deny - [0:0]
+:FWDI_public_log - [0:0]
+:FWDO_docker - [0:0]
+:FWDO_docker_allow - [0:0]
+:FWDO_docker_deny - [0:0]
+:FWDO_docker_log - [0:0]
+:FWDO_public - [0:0]
+:FWDO_public_allow - [0:0]
+:FWDO_public_deny - [0:0]
+:FWDO_public_log - [0:0]
+:INPUT_ZONES - [0:0]
+:INPUT_ZONES_SOURCE - [0:0]
+:INPUT_direct - [0:0]
+:IN_docker - [0:0]
+:IN_docker_allow - [0:0]
+:IN_docker_deny - [0:0]
+:IN_docker_log - [0:0]
+:IN_public - [0:0]
+:IN_public_allow - [0:0]
+:IN_public_deny - [0:0]
+:IN_public_log - [0:0]
+:OUTPUT_direct - [0:0]
+-A INPUT -i virbr0 -p udp -m udp --dport 53 -j ACCEPT
+-A INPUT -i virbr0 -p tcp -m tcp --dport 53 -j ACCEPT
+-A INPUT -i virbr0 -p udp -m udp --dport 67 -j ACCEPT
+-A INPUT -i virbr0 -p tcp -m tcp --dport 67 -j ACCEPT
+-A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -i lo -j ACCEPT
+-A INPUT -j INPUT_direct
+-A INPUT -j INPUT_ZONES_SOURCE
+-A INPUT -j INPUT_ZONES
+-A FORWARD -j DOCKER-USER
+-A FORWARD -j DOCKER-ISOLATION-STAGE-1
+-A FORWARD -o docker0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o docker0 -j DOCKER
+-A FORWARD -i docker0 ! -o docker0 -j ACCEPT
+-A FORWARD -i docker0 -o docker0 -j ACCEPT
+-A FORWARD -o br-b3a6b89b76b5 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o br-b3a6b89b76b5 -j DOCKER
+-A FORWARD -i br-b3a6b89b76b5 ! -o br-b3a6b89b76b5 -j ACCEPT
+-A FORWARD -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -j ACCEPT
+-A FORWARD -o br-a7b9cdc2aa04 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o br-a7b9cdc2aa04 -j DOCKER
+-A FORWARD -i br-a7b9cdc2aa04 ! -o br-a7b9cdc2aa04 -j ACCEPT
+-A FORWARD -i br-a7b9cdc2aa04 -o br-a7b9cdc2aa04 -j ACCEPT
+-A FORWARD -o br-7eb9d7fbd7b9 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o br-7eb9d7fbd7b9 -j DOCKER
+-A FORWARD -i br-7eb9d7fbd7b9 ! -o br-7eb9d7fbd7b9 -j ACCEPT
+-A FORWARD -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -j ACCEPT
+-A FORWARD -o br-7e913aac1abd -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -o br-7e913aac1abd -j DOCKER
+-A FORWARD -i br-7e913aac1abd ! -o br-7e913aac1abd -j ACCEPT
+-A FORWARD -i br-7e913aac1abd -o br-7e913aac1abd -j ACCEPT
+-A FORWARD -d 192.168.122.0/24 -o virbr0 -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -s 192.168.122.0/24 -i virbr0 -j ACCEPT
+-A FORWARD -i virbr0 -o virbr0 -j ACCEPT
+-A FORWARD -o virbr0 -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -i virbr0 -j REJECT --reject-with icmp-port-unreachable
+-A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
+-A FORWARD -i lo -j ACCEPT
+-A FORWARD -j FORWARD_direct
+-A FORWARD -j FORWARD_IN_ZONES_SOURCE
+-A FORWARD -j FORWARD_IN_ZONES
+-A FORWARD -j FORWARD_OUT_ZONES_SOURCE
+-A FORWARD -j FORWARD_OUT_ZONES
+-A FORWARD -m conntrack --ctstate INVALID -j DROP
+-A FORWARD -j REJECT --reject-with icmp-host-prohibited
+-A OUTPUT -o virbr0 -p udp -m udp --dport 68 -j ACCEPT
+-A OUTPUT -o lo -j ACCEPT
+-A OUTPUT -j OUTPUT_direct
+-A DOCKER -d 172.21.0.2/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16063 -j ACCEPT
+-A DOCKER -d 172.19.0.2/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 9000 -j ACCEPT
+-A DOCKER -d 172.21.0.2/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6063 -j ACCEPT
+-A DOCKER -d 172.19.0.2/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 8000 -j ACCEPT
+-A DOCKER -d 172.21.0.3/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16061 -j ACCEPT
+-A DOCKER -d 172.19.0.3/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 9093 -j ACCEPT
+-A DOCKER -d 172.21.0.3/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6061 -j ACCEPT
+-A DOCKER -d 172.19.0.4/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 3000 -j ACCEPT
+-A DOCKER -d 172.21.0.4/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16066 -j ACCEPT
+-A DOCKER -d 172.19.0.5/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 9100 -j ACCEPT
+-A DOCKER -d 172.19.0.6/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 9090 -j ACCEPT
+-A DOCKER -d 172.21.0.5/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16065 -j ACCEPT
+-A DOCKER -d 172.19.0.7/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 9115 -j ACCEPT
+-A DOCKER -d 172.21.0.6/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16064 -j ACCEPT
+-A DOCKER -d 172.19.0.8/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 8081 -j ACCEPT
+-A DOCKER -d 172.21.0.7/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 16062 -j ACCEPT
+-A DOCKER -d 172.19.0.9/32 ! -i br-b3a6b89b76b5 -o br-b3a6b89b76b5 -p tcp -m tcp --dport 8080 -j ACCEPT
+-A DOCKER -d 172.21.0.4/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6066 -j ACCEPT
+-A DOCKER -d 172.21.0.5/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6065 -j ACCEPT
+-A DOCKER -d 172.21.0.6/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6064 -j ACCEPT
+-A DOCKER -d 172.21.0.7/32 ! -i br-7eb9d7fbd7b9 -o br-7eb9d7fbd7b9 -p tcp -m tcp --dport 6062 -j ACCEPT
+-A DOCKER-ISOLATION-STAGE-1 -i docker0 ! -o docker0 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -i br-b3a6b89b76b5 ! -o br-b3a6b89b76b5 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -i br-a7b9cdc2aa04 ! -o br-a7b9cdc2aa04 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -i br-7eb9d7fbd7b9 ! -o br-7eb9d7fbd7b9 -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -i br-7e913aac1abd ! -o br-7e913aac1abd -j DOCKER-ISOLATION-STAGE-2
+-A DOCKER-ISOLATION-STAGE-1 -j RETURN
+-A DOCKER-ISOLATION-STAGE-2 -o docker0 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -o br-b3a6b89b76b5 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -o br-a7b9cdc2aa04 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -o br-7eb9d7fbd7b9 -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -o br-7e913aac1abd -j DROP
+-A DOCKER-ISOLATION-STAGE-2 -j RETURN
+-A DOCKER-USER -j RETURN
+-A FORWARD_IN_ZONES -i docker0 -g FWDI_docker
+-A FORWARD_IN_ZONES -i br-b3a6b89b76b5 -g FWDI_docker
+-A FORWARD_IN_ZONES -i br-a7b9cdc2aa04 -g FWDI_docker
+-A FORWARD_IN_ZONES -i br-7eb9d7fbd7b9 -g FWDI_docker
+-A FORWARD_IN_ZONES -i br-7e913aac1abd -g FWDI_docker
+-A FORWARD_IN_ZONES -i ens33 -g FWDI_public
+-A FORWARD_IN_ZONES -g FWDI_public
+-A FORWARD_OUT_ZONES -o docker0 -g FWDO_docker
+-A FORWARD_OUT_ZONES -o br-b3a6b89b76b5 -g FWDO_docker
+-A FORWARD_OUT_ZONES -o br-a7b9cdc2aa04 -g FWDO_docker
+-A FORWARD_OUT_ZONES -o br-7eb9d7fbd7b9 -g FWDO_docker
+-A FORWARD_OUT_ZONES -o br-7e913aac1abd -g FWDO_docker
+-A FORWARD_OUT_ZONES -o ens33 -g FWDO_public
+-A FORWARD_OUT_ZONES -g FWDO_public
+-A FWDI_docker -j FWDI_docker_log
+-A FWDI_docker -j FWDI_docker_deny
+-A FWDI_docker -j FWDI_docker_allow
+-A FWDI_docker -j ACCEPT
+-A FWDI_public -j FWDI_public_log
+-A FWDI_public -j FWDI_public_deny
+-A FWDI_public -j FWDI_public_allow
+-A FWDI_public -p icmp -j ACCEPT
+-A FWDO_docker -j FWDO_docker_log
+-A FWDO_docker -j FWDO_docker_deny
+-A FWDO_docker -j FWDO_docker_allow
+-A FWDO_docker -j ACCEPT
+-A FWDO_public -j FWDO_public_log
+-A FWDO_public -j FWDO_public_deny
+-A FWDO_public -j FWDO_public_allow
+-A INPUT_ZONES -i docker0 -g IN_docker
+-A INPUT_ZONES -i br-b3a6b89b76b5 -g IN_docker
+-A INPUT_ZONES -i br-a7b9cdc2aa04 -g IN_docker
+-A INPUT_ZONES -i br-7eb9d7fbd7b9 -g IN_docker
+-A INPUT_ZONES -i br-7e913aac1abd -g IN_docker
+-A INPUT_ZONES -i ens33 -g IN_public
+-A INPUT_ZONES -g IN_public
+-A IN_docker -j IN_docker_log
+-A IN_docker -j IN_docker_deny
+-A IN_docker -j IN_docker_allow
+-A IN_docker -j ACCEPT
+-A IN_public -j IN_public_log
+-A IN_public -j IN_public_deny
+-A IN_public -j IN_public_allow
+-A IN_public -p icmp -j ACCEPT
+-A IN_public_allow -p tcp -m tcp --dport 22 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p tcp -m tcp --dport 9090 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p tcp -m tcp --dport 80 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p udp -m udp --dport 6559 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p tcp -m tcp --dport 443 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p tcp -m tcp --dport 514 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p tcp -m tcp --dport 8000 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p udp -m udp --dport 514 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+-A IN_public_allow -p udp -m udp --dport 162 -m conntrack --ctstate NEW,UNTRACKED -j ACCEPT
+COMMIT
+# Completed on Fri Nov 10 09:26:54 2023
+
+
+############################ SSH检查 #############################
+服务状态：active
+SSH协议版本：
+
+信任主机
+--------
+
+是否允许ROOT远程登录
+--------------------
+PermitRootLogin yes
+
+/etc/ssh/sshd_config
+--------------------
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+SyslogFacility AUTHPRIV
+PermitRootLogin yes
+AuthorizedKeysFile	.ssh/authorized_keys
+PasswordAuthentication yes
+ChallengeResponseAuthentication no
+GSSAPIAuthentication yes
+GSSAPICleanupCredentials no
+UsePAM yes
+X11Forwarding yes
+UseDNS no
+AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
+AcceptEnv LC_PAPER LC_NAME LC_ADDRESS LC_TELEPHONE LC_MEASUREMENT
+AcceptEnv LC_IDENTIFICATION LC_ALL LANGUAGE
+AcceptEnv XMODIFIERS
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
+
+
+############################ syslog检查 ##########################
+服务状态：active
+
+/etc/rsyslog.conf
+-----------------
+*.info;mail.none;authpriv.none;cron.none  /var/log/messages
+authpriv.*                                /var/log/secure
+mail.*                                    -/var/log/maillog
+cron.*                                    /var/log/cron
+*.emerg                                   :omusrmsg:*
+uucp,news.crit                            /var/log/spooler
+local7.*                                  /var/log/boot.log
+
+
+############################ SNMP检查 ############################
+服务状态：unknown
+
+/etc/snmp/snmpd.conf
+--------------------
+com2sec notConfigUser  default     xguo
+group   notConfigGroup v1           notConfigUser
+group   notConfigGroup v2c           notConfigUser
+view    systemview    included   .1
+view    systemview    included   .1.3.6.1.2.1.1
+view    systemview    included   .1.3.6.1.2.1.25.1.1
+access  notConfigGroup ""      any       noauth    exact  systemview none none
+syslocation Unknown (edit /etc/snmp/snmpd.conf)
+syscontact Root <root@localhost> (configure /etc/snmp/snmp.local.conf)
+dontLogTCPWrappersConnects yes
+
+
+############################ NTP检查 #############################
+服务状态：active
+
+/etc/ntp.conf
+-------------
+driftfile /var/lib/ntp/drift
+restrict default nomodify notrap nopeer noquery
+restrict 127.0.0.1 
+restrict ::1
+restrict 192.168.1.0 mask 255.255.255.0 nomodify notrap
+restrict 172.16.19.0 mask 255.255.255.0 nomodify notrap
+restrict 192.168.226.0 mask 255.255.255.0 nomodify notrap
+server 106.55.184.199 iburst minpoll 5 maxpoll 30
+server 120.25.115.20 iburst minpoll 5 maxpoll 30
+includefile /etc/ntp/crypto/pw
+keys /etc/ntp/keys
+disable monitor
+
+
+############################ 软件检查 ############################
+sharutils-4.13.3-8.el7.x86_64                  Wed  17  Jan  2024  04:23:20  PM  CST
+inotify-tools-3.14-9.el7.x86_64                Mon  15  Jan  2024  05:03:27  PM  CST
+wireshark-1.10.14-25.el7.x86_64                Tue  09  Jan  2024  08:56:18  AM  CST
+libsmi-0.4.8-13.el7.x86_64                     Tue  09  Jan  2024  08:56:15  AM  CST
+c-ares-1.10.0-3.el7_9.1.x86_64                 Tue  09  Jan  2024  08:56:14  AM  CST
+perl-Sys-MemInfo-0.91-7.el7.x86_64             Thu  04  Jan  2024  12:19:05  PM  CST
+perl-Date-Manip-6.41-2.el7.noarch              Thu  04  Jan  2024  12:19:05  PM  CST
+logwatch-7.4.0-35.20130522svn140.el7_5.noarch  Thu  04  Jan  2024  12:19:05  PM  CST
+perl-Sys-CPU-0.54-4.el7.x86_64                 Thu  04  Jan  2024  12:19:04  PM  CST
+mysql-utilities-1.6.5-1.el7.noarch             Thu  28  Dec  2023  12:03:18  PM  CST
+############################ 文件检查 #############################
+
+############################查看所有被修改过的文件返回最近24小时内的############################
+/root/shell_test/sys_check/health_check.sh
+/root/shell_test/sys_check/health_all.sh
+/root/shell_test/nginx/nginx_set.sh
+
+
+
+
+
+
+
+
+############################检查定时文件的完整性############################
+SHELL=/bin/bash
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root
+
+# For details see man 4 crontabs
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name  command to be executed
+
+
+############################查看系统命令是否被替换############################
+total 723688
+dr-xr-xr-x.   3 root root      40960 Jan 22 09:10 .
+-rwxr-xr-x    1 root root        211 Jan 22 09:10 ngxtop
+-rwxr-xr-x    1 root root        208 Jan 22 09:10 tabulate
+lrwxrwxrwx    1 root root          8 Dec 24 09:08 tclsh -> tclsh8.5
+lrwxrwxrwx    1 root root          5 Dec 15 11:35 slogin -> ./ssh
+lrwxrwxrwx    1 root root         18 Dec 14 09:15 btop -> /opt/btop/bin/btop
+lrwxrwxrwx    1 root root         20 Dec  6 14:15 1pctl -> /usr/local/bin/1pctl
+lrwxrwxrwx    1 root root         21 Dec  6 14:15 1panel -> /usr/local/bin/1panel
+lrwxrwxrwx    1 root root         29 Dec  6 14:15 docker-compose -> /usr/local/bin/docker-compose
+
