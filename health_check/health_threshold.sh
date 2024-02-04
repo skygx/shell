@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # 设置发送警报的邮件地址
 EMAIL_ADDRESS="your_email@example.com"
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 #/bin/bash
 
 ipaddress=`ip a|grep "global"|awk '{print $2}' |awk -F/ '{print $1}'`
@@ -10,9 +11,9 @@ create_html_css(){
 <head>
 <style type="text/css">
     body        {font:12px Courier New,Helvetica,sansserif; color:black; background:White;}
-    table,tr,td {font:12px Courier New,Helvetica,sansserif; color:Black; background:#FFFFCC; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;} 
-    th          {font:bold 12px Courier New,Helvetica,sansserif; color:White; background:#0033FF; padding:0px 0px 0px 0px;} 
-    h1          {font:bold 12pt Courier New,Helvetica,sansserif; color:Black; padding:0px 0px 0px 0px;} 
+    table,tr,td {font:12px Courier New,Helvetica,sansserif; color:Black; background:#FFFFCC; padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;}
+    th          {font:bold 12px Courier New,Helvetica,sansserif; color:White; background:#0033FF; padding:0px 0px 0px 0px;}
+    h1          {font:bold 12pt Courier New,Helvetica,sansserif; color:Black; padding:0px 0px 0px 0px;}
 </style>
 </head>
 <body>"
@@ -122,18 +123,18 @@ get_meminfo(){
    memtotal=`vmstat -s | head -1 | awk '{print $1}'`
    avm=`vmstat -s| sed -n '3p' | awk '{print $1}'`
    name_val "Mem_used_rate(%)" "`echo "100*${avm}/${memtotal}" | bc`%" >>/tmp/tmpmem1_`date +%y%m%d`.txt
-  
+
 }
 get_diskinfo(){
    echo "Filesystem        |Type   |Size |  Used  | Avail | Use%  | Mounted on | Opts" >>/tmp/tmpdisk_h1_`date +%y%m%d`.txt
    df -ThP|grep -v tmpfs|sed '1d'|sort >/tmp/tmpdf1_`date +%y%m%d`.txt
    mount -l|awk '{print $1,$6}'|grep ^/|sort >/tmp/tmpdf2_`date +%y%m%d`.txt
    join /tmp/tmpdf1_`date +%y%m%d`.txt /tmp/tmpdf2_`date +%y%m%d`.txt\
-   |awk '{print $1,"|", $2,"|", $3,"|", $4,"|", $5,"|", $6,"|", $7,"|", $8}' >>/tmp/tmpdisk_t1_`date +%y%m%d`.txt 
-   lsblk >>/tmp/tmpdisk1_`date +%y%m%d`.txt 
+   |awk '{print $1,"|", $2,"|", $3,"|", $4,"|", $5,"|", $6,"|", $7,"|", $8}' >>/tmp/tmpdisk_t1_`date +%y%m%d`.txt
+   lsblk >>/tmp/tmpdisk1_`date +%y%m%d`.txt
    for disk in `ls -l /sys/block|awk '{print $9}'|sed '/^$/d'|grep -v fd`
    do
-      echo "${disk}" `cat /sys/block/${disk}/queue/scheduler`  >>/tmp/tmpdisk2_`date +%y%m%d`.txt 
+      echo "${disk}" `cat /sys/block/${disk}/queue/scheduler`  >>/tmp/tmpdisk2_`date +%y%m%d`.txt
    done
    pvs >>/tmp/tmpdisk3_`date +%y%m%d`.txt
    echo "======================  =====  =====  =====  =====  =====  ==========  =======" >>/tmp/tmpdisk3_`date +%y%m%d`.txt
@@ -157,14 +158,14 @@ get_topproc(){
    ps aux|head -1 >>/tmp/tmptopmem_`date +%y%m%d`.txt
    ps aux|grep -v PID|sort -rn -k +4|head  >>/tmp/tmptopmem_`date +%y%m%d`.txt
    echo "TOP10 CPU Resource Process" >>/tmp/tmptopmem_`date +%y%m%d`.txt
-   top -bn1 -o "%CPU"|sed  -n '1,17p' 
+   top -bn1 -o "%CPU"|sed  -n '1,17p'
    #top i/o
    echo "#######################################  磁盘io情况  #######################################" >>/tmp/tmptopio_`date +%y%m%d`.txt
    iostat -k -d 10 5  >>/tmp/tmptopio_`date +%y%m%d`.txt
 }
 get_crontablist(){
    crontab -l >>/tmp/tmp_crontab_`date +%y%m%d`.txt
-  if [ -s /tmp/tmp_crontab_`date +%y%m%d`.txt ] ; then 
+  if [ -s /tmp/tmp_crontab_`date +%y%m%d`.txt ] ; then
     echo 'ths file is not empyt and file info'
   else
     echo '#### 无定时任务 ####' >>/tmp/tmp_crontab_`date +%y%m%d`.txt
@@ -173,7 +174,7 @@ get_crontablist(){
 get_crontab_content(){
    crontab_content_log=/tmp/tmp_crontab_content_`date +%y%m%d`.txt
    crontab -l|awk -F ' ' '{ print $NF}' >>$crontab_content_log
- 
+
    contrab_num=`crontab -l|awk -F ' ' '{ print $NF}'|wc -l`
    if [ $contrab_num -ne 0 ];then
    count=1
@@ -192,142 +193,142 @@ create_html(){
   rm -rf $file_output
   touch $file_output
   create_html_css >> $file_output
-  
+
   create_html_head "系统基本信息" >> $file_output
   create_table_head1 >> $file_output
   get_physics >>/tmp/tmpos_summ_`date +%y%m%d`.txt
   while read line
   do
-    create_tr1 "$line" 
+    create_tr1 "$line"
   done < /tmp/tmpos_summ_`date +%y%m%d`.txt
   create_table_end >> $file_output
-  
+
   create_html_head "cpu信息" >> $file_output
   create_table_head1 >> $file_output
   get_cpuinfo >>/tmp/tmp_cpuinfo_`date +%y%m%d`.txt
   while read line
   do
-    create_tr1 "$line" 
-  done < /tmp/tmp_cpuinfo_`date +%y%m%d`.txt  
+    create_tr1 "$line"
+  done < /tmp/tmp_cpuinfo_`date +%y%m%d`.txt
   create_table_end >> $file_output
- 
+
   create_html_head "ip网络信息" >> $file_output
   create_table_head1 >> $file_output
   get_netinfo
   while read line
   do
-    create_tr2 "$line" 
+    create_tr2 "$line"
   done < /tmp/tmpnet_h1_`date +%y%m%d`.txt
   while read line
   do
-    create_tr1 "$line" 
+    create_tr1 "$line"
   done < /tmp/tmpnet1_`date +%y%m%d`.txt
   create_table_end >> $file_output
- 
+
   create_html_head "cpu使用率" >> $file_output
   create_table_head1 >> $file_output
   get_cpuuse
   create_tr3 "/tmp/tmp_cpuuse_`date +%y%m%d`.txt"
   create_table_end >> $file_output
- 
+
   create_html_head "连接数信息" >> $file_output
   create_table_head1 >> $file_output
   get_connections >>/tmp/tmp_connections_`date +%y%m%d`.txt
   while read line
   do
-    create_tr1 "$line" 
-  done < /tmp/tmp_connections_`date +%y%m%d`.txt  
+    create_tr1 "$line"
+  done < /tmp/tmp_connections_`date +%y%m%d`.txt
   create_table_end >> $file_output
- 
+
   create_html_head "系统限制信息" >> $file_output
   create_table_head1 >> $file_output
   get_ulimitinfo
   create_tr3 "/tmp/tmp_ulimitinfo_`date +%y%m%d`.txt"
-  create_table_end >> $file_output  
- 
+  create_table_end >> $file_output
+
   create_html_head "内存使用信息" >> $file_output
   create_table_head1 >> $file_output
   get_meminfo
   while read line
   do
-    create_tr1 "$line" 
+    create_tr1 "$line"
   done < /tmp/tmpmem1_`date +%y%m%d`.txt
   create_table_end >> $file_output
-  
+
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmpmem2_`date +%y%m%d`.txt"
   create_table_end >> $file_output
-  
+
   create_table_head1 >> $file_output
   while read line
   do
-    create_tr2 "$line" 
+    create_tr2 "$line"
   done < /tmp/tmpmem3_h1_`date +%y%m%d`.txt
-  
+
   while read line
   do
-    create_tr1 "$line" 
+    create_tr1 "$line"
   done < /tmp/tmpmem3_t1_`date +%y%m%d`.txt
   create_table_end >> $file_output
-  
+
   create_html_head "磁盘使用信息" >> $file_output
   create_table_head1 >> $file_output
   get_diskinfo
   while read line
   do
-    create_tr2 "$line" 
+    create_tr2 "$line"
   done < /tmp/tmpdisk_h1_`date +%y%m%d`.txt
   while read line
   do
-    create_tr1 "$line" 
+    create_tr1 "$line"
   done < /tmp/tmpdisk_t1_`date +%y%m%d`.txt
   create_table_end >> $file_output
-  
+
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmpdisk1_`date +%y%m%d`.txt"
   create_table_end >> $file_output
-  
+
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmpdisk2_`date +%y%m%d`.txt"
   create_table_end >> $file_output
-  
+
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmpdisk3_`date +%y%m%d`.txt"
   create_table_end >> $file_output
- 
+
   create_html_head "网络流量情况" >> $file_output
   create_table_head1 >> $file_output
   get_topproc
   create_tr3 "/tmp/tmpload_`date +%y%m%d`.txt"
   create_table_end >> $file_output
-  
+
   create_html_head "消耗CPU前十排行" >> $file_output
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmptopcpu_`date +%y%m%d`.txt"
   create_table_end >> $file_output
-          
+
   create_html_head "消耗内存前十排行" >> $file_output
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmptopmem_`date +%y%m%d`.txt"
   create_table_end >> $file_output
-  
+
   create_html_head "磁盘io情况" >> $file_output
   create_table_head1 >> $file_output
   create_tr3 "/tmp/tmptopio_`date +%y%m%d`.txt"
   create_table_end >> $file_output
- 
+
   create_html_head "定时任务信息" >> $file_output
   create_table_head1 >> $file_output
   get_crontablist
   create_tr3 "/tmp/tmp_crontab_`date +%y%m%d`.txt"
   create_table_end >> $file_output
- 
+
   create_html_head "定时任务脚本内容" >> $file_output
   create_table_head1 >> $file_output
   get_crontab_content
   create_tr3 "/tmp/tmp_crontab_shellcontent_`date +%y%m%d`.txt"
   create_table_end >> $file_output
- 
+
   create_html_end >> $file_output
   sed -i 's/BORDER=1/width="68%" border="1" bordercolor="#000000" cellspacing="0px" style="border-collapse:collapse"/g' $file_output
   rm -rf /tmp/tmp*_`date +%y%m%d`.txt

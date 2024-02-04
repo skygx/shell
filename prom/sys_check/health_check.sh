@@ -65,7 +65,7 @@ swap_check(){
 	else
 	echo "swap未使用"
 	fi
-        }
+    }
 
 disk_Check(){
 
@@ -82,7 +82,7 @@ ip_Addr(){
 
 port_Check(){
 #        local service_port=50456
-        ports=($@)
+    ports=($@)
 	for service_port in ${ports[*]}
 	do
         Temp_S=`netstat -naut | grep -E ":$service_port\>"`
@@ -97,8 +97,6 @@ port_Check(){
                 echo "Port：$service_port  LISTEN"
         fi
 	done
-
-
 }
 
 process_Check(){
@@ -109,9 +107,9 @@ process_Check(){
     check_proc=`ps -ef | grep $process | grep -v grep`
     if [ -n "$check_proc" ]
     then
-	echo "Process：$process  on" 
+	echo "Process：$process  on"
     else
-	echo "Process：$process  down" 
+	echo "Process：$process  down"
     fi
   done
 }
@@ -133,7 +131,7 @@ url_Check(){
 
 net_Check(){
         echo "`netstat -nalt | awk 'NR>2 {++S[$NF]} END {for(a in S) printf "%s %d\n",a,S[a]}' | awk '{printf ("网络连接状态：%-15s 数量：%-d\n"),$1,$2}'`"
-<<EOF	
+<<EOF
 	for key in $(netstat -nalt | awk 'NR>2 {++S[$NF]} END {for(a in S) printf "%s%d\n",a,S[a]}')
 	do
 	status=${key%%[0-9]*}
