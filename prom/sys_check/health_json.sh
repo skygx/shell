@@ -88,4 +88,4 @@ data_dic='{
 	   "net_conn": "'"$net_conn"'",
 	   "io_util": "'"$io_util"'"
 	   }'
-echo $data_dic > data.json
+echo $data_dic > /root/shell_test/sys_check/data.json
