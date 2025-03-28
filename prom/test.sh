@@ -9,6 +9,7 @@ echo "$SHELL"
 #echo "alias logs='cd /var/log'" >> ~/.bashrc
 date
 #touch /root/111.txt
+echo "Hello $name"  
 
 #ip=$(hostname -I|cut -d\  -f 1)
 #

@@ -1,0 +1,4 @@
+{"services": [{"name":"prometheus","id":"prom","address":"192.168.226.20","port":9090,"checks":[{"http":"http://192.168.226.20:9090/","interval":"5s"}]},
+{"name":"grafana","id":"grafana","address":"192.168.226.20","port":3000,"checks":[{"http":"http://192.168.226.20:3000/","interval":"5s"}]}
+{"name":"nginx-master","id":"nginx","address":"192.168.226.20","port":80,"checks":[{"http":"http://192.168.226.20:80/","interval":"5s"}]}
+]}

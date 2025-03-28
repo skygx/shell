@@ -1,0 +1,1576 @@
+#1701409389
+./startup.sh
+#1701409397
+curl localhost:80/tomcat
+#1701409413
+curl 192.168.226.20
+#1701409417
+curl 192.168.226.20/tomcat/
+#1701409424
+curl 192.168.226.20:8989
+#1701409483
+vim /etc/nginx/nginx.conf
+#1701409501
+systemctl restart nginx
+#1701409504
+curl localhost
+#1701409508
+curl localhost/tomcat/
+#1701409521
+vim /etc/nginx/nginx.conf
+#1701409542
+nginx -V
+#1701409548
+nginx -V|grep stub
+#1701409617
+pwd
+#1701409619
+cd /etc/nginx/
+#1701409620
+ls
+#1701409631
+diff -y nginx.conf nginx.conf20231106 
+#1701409797
+vim nginx.conf
+#1701409824
+systemctl restart nginx
+#1701409837
+curl 192.168.226.20/nginx_status
+#1701409842
+curl 192.168.226.20/tomcat
+#1701410492
+cd conf.d/
+#1701410493
+ls
+#1701410494
+vim dns.conf 
+#1701410558
+cd /usr/share/nginx/html/
+#1701410558
+ls
+#1701410573
+systemctl restart nginx
+#1701410580
+systemctl start named
+#1701410586
+curl www.xguo.com
+#1701410592
+curl mail.xguo.com
+#1701410604
+vim /var/named/xguo.com.zone 
+#1701410632
+vim /etc/nginx/conf.d/dns.conf 
+#1701410669
+ls
+#1701410673
+ll
+#1701410688
+chown -R nginx.nginx mail
+#1701410697
+curl www.xguo.com
+#1701410702
+curl mail.xguo.com
+#1701410708
+cat /var/named/xguo.com.zone 
+#1701410715
+curl ns.xguo.com
+#1701410722
+nslookup
+#1701410768
+curl master.xguo.com
+#1701410777
+curl ns.xguo.com
+#1701410809
+vim /etc/nginx/conf.d/dns.conf 
+#1701410842
+systemctl restart nginx
+#1701410846
+curl www.xguo.com
+#1701410850
+curl mail.xguo.com
+#1701410859
+curl master.xguo.com
+#1701410874
+pwd
+#1701410875
+ls
+#1701410877
+ll
+#1701410888
+vim /etc/nginx/conf.d/dns.conf 
+#1701410942
+pwd
+#1701410942
+ls
+#1701410947
+mv mail mail
+#1701410955
+curl www.xguo.com.
+#1701410960
+curl mail.xguo.com.
+#1701410964
+ll
+#1701410970
+cd mail/
+#1701410970
+ls
+#1701410971
+ll
+#1701410975
+cd ..
+#1701410977
+cd www/
+#1701410977
+ls
+#1701410978
+ll
+#1701410981
+cd ..
+#1701410983
+cd mail/
+#1701410984
+ls
+#1701410991
+chmod 644 index.html 
+#1701410997
+curl mail.xguo.com
+#1701411000
+ll
+#1701411010
+vim /var/named/xguo.com.zone 
+#1701411054
+systemctl restart named
+#1701411059
+curl mail.xguo.com
+#1701411064
+curl www.xguo.com
+#1701411070
+pwd
+#1701411078
+cd /var/named/
+#1701411079
+ls
+#1701411080
+vim xguo.com.zone 
+#1701411101
+systemctl restart named
+#1701411108
+vim /etc/nginx/conf.d/dns.conf 
+#1701411123
+systemctl restart nginx
+#1701411127
+curl ttt.xguo.com
+#1701411139
+curl www.xguo.com
+#1701411153
+cat xguo.com.zone 
+#1701411190
+vim /etc/nginx/conf.d/dns.conf 
+#1701411213
+pwd
+#1701411222
+cd /usr/share/nginx/html/
+#1701411222
+ls
+#1701411225
+cd mail/
+#1701411227
+cat index.html 
+#1701411233
+cd ..
+#1701411234
+ls
+#1701411238
+mv mail ttt
+#1701411243
+vim /etc/nginx/conf.d/dns.conf 
+#1701411259
+nginx -s reload
+#1701411268
+curl ttt.xguo.com
+#1701411275
+pwd
+#1701411278
+cd /etc/nginx/
+#1701411279
+ls
+#1701411286
+cd default.d/
+#1701411287
+ls
+#1701411289
+cd ..
+#1701411290
+cd conf.d/
+#1701411291
+ls
+#1701411295
+cat awstats.conf.bk 
+#1701411310
+ls
+#1701411314
+cat cover.conf 
+#1701411359
+mv cover.conf upsteam_cover.conf.bk
+#1701411360
+ls
+#1701411369
+systemctl restart nginx
+#1701411375
+curl www.xguo.com
+#1701411380
+curl ttt.xguo.com
+#1701411386
+curl mail.xguo.com
+#1701411391
+curl .xguo.com
+#1701411395
+curl xguo.com
+#1701411405
+curl ns.xguo.com
+#1701411413
+named -V
+#1701411447
+ls
+#1701411450
+cd ..
+#1701411452
+vim nginx.conf
+#1701412310
+pwd
+#1701412312
+vim nginx.conf
+#1701412359
+pwd
+#1701412361
+cd conf.d/
+#1701412362
+ls
+#1701412364
+vim dns.conf 
+#1701412424
+systemctl restart nginx
+#1701412428
+curl www.xguo.com
+#1701412435
+curl ttt.xguo.com
+#1701412722
+pwd
+#1701412723
+ls
+#1701412724
+vim dns.conf 
+#1701412743
+nginx -s reload
+#1701412746
+curl ttt.xguo.com
+#1701412753
+curl www.xguo.com
+#1701414533
+systemctl status ntpd
+#1701414539
+vim /etc/ntp.conf 
+#1701414548
+systemctl start ntpd
+#1701414553
+ntpq -p
+#1701414573
+vim /etc/ntp.conf 
+#1701421615
+systemctl restart ntpd
+#1701421617
+ntpq -p
+#1701421724
+strace  ntpq -p
+#1701421747
+ntpq -p 127.0.0.1
+#1701421785
+ntpq -4p
+#1701421806
+sysctl -a|grep disable
+#1701421813
+sysctl -a|grep disable_ipv6
+#1701421842
+systemctl status ntp
+#1701421843
+systemctl status ntpd
+#1701421850
+date
+#1701421862
+journalctl -u ntpd
+#1701421889
+netstat -naltp|grep 123
+#1701421902
+netstat -nalup|grep 123
+#1701421959
+pwd
+#1701421964
+cd ../..
+#1701421968
+vim ntp.conf 
+#1701422083
+vim /etc/chrony.conf 
+#1701422103
+systemctl stop ntpd
+#1701422109
+systemctl start chronyd
+#1701422115
+systemctl status chronyd
+#1701422137
+chronyc tracking
+#1701422152
+date -s "202310100000"
+#1701422158
+date --help
+#1701422199
+date -s "10:00:00"
+#1701396001
+date
+#1701396015
+systemctl status chronyd
+#1701396033
+date
+#1701396040
+ping ntp1.aliyun.com
+#1701396106
+date
+#1701422337
+vim chrony.conf 
+#1701422450
+systemctl restart chronyd
+#1701422455
+systemctl status chronyd
+#1701422459
+date
+#1701422607
+chronyc tracking
+#1701422687
+chronyc sources -v
+#1701423902
+init 0
+#1701650801
+pwd
+#1701650802
+ls
+#1701650803
+vdir
+#1701650808
+vdir -R
+#1701650818
+vdir -t
+#1701650825
+cat dead.letter 
+#1701650845
+pwd
+#1701650846
+ls
+#1701650848
+crontab -l
+#1701650852
+crontab -e
+#1701650870
+tailf dead.letter 
+#1701650968
+date
+#1701650981
+vim /etc/ntp.conf 
+#1701651023
+systemctl status chronyd
+#1701651029
+systemctl status ntpd
+#1701655435
+pwd
+#1701655548
+ls
+#1701655551
+cd prometheus/
+#1701655551
+ls
+#1701655553
+docker ps
+#1701655560
+pwd
+#1701655562
+cd ..
+#1701655562
+ls
+#1701655564
+cd docker/
+#1701655564
+ls
+#1701655568
+cd redis-cluster/
+#1701655568
+ls
+#1701655576
+docker-compose -f docker-compose.yml down
+#1701655580
+docker ps
+#1701655583
+free -h
+#1701655589
+pwd
+#1701655591
+cd ../..
+#1701655592
+ls
+#1701655593
+cd prometheus/
+#1701655594
+ls
+#1701655595
+cd elastic/
+#1701655596
+ls
+#1701655717
+docker-compose -f elastic-compose.yml up -d
+#1701655732
+pip install elasticsearch-faker
+#1701655751
+pwd
+#1701655758
+which pip
+#1701655760
+cd /usr/bin/
+#1701655772
+pip3 install elasticsearch-faker
+#1701655820
+curl localhost:9200
+#1701655832
+cd
+#1701655833
+ls
+#1701655846
+mkdir elastic
+#1701655847
+cd elastic/
+#1701655848
+ls
+#1701655856
+vim doc_template.jinja2
+#1701655876
+file doc_template.jinja2 
+#1701655881
+dos2unix doc_template.jinja2 
+#1701655895
+vim es_gen.sh
+#1701656122
+ls
+#1701656124
+vim es_gen.sh 
+#1701656130
+sh es_gen.sh 
+#1701656139
+vim es_gen.sh 
+#1701656157
+sh es_gen.sh 
+#1701656164
+elasticsearch-faker --help
+#1701656208
+ls
+#1701656211
+cd ..
+#1701656212
+ls
+#1701656220
+mv elastic prometheus/elastic/
+#1701656223
+cd prometheus/elastic/
+#1701656223
+ls
+#1701656224
+ll
+#1701656227
+cat logstash-compose.yml 
+#1701656246
+cat kibana-compose.yml 
+#1701656260
+ls
+#1701656266
+docker-compose -f logstash-compose.yml up -d
+#1701656275
+docker-compose -f kibana-compose.yml up -d
+#1701656290
+docker ps
+#1701656320
+docker logs kibana
+#1701656327
+docker logs logstash
+#1701656348
+docker ps|grep kibana
+#1701656356
+docker logs kibana
+#1701656366
+pwd
+#1701656366
+ls
+#1701656368
+cd /opt/
+#1701656369
+ls
+#1701656370
+cd kibana/
+#1701656371
+ls
+#1701656373
+cat kibana.yml 
+#1701656436
+docker ps
+#1701656444
+docker network ls
+#1701656450
+ls
+#1701656454
+cd -
+#1701656458
+cd /root/prometheus/elastic/
+#1701656459
+ls
+#1701656462
+cat elastic
+#1701656464
+cat kibana-compose.yml 
+#1701656481
+cat elastic-compose.yml 
+#1701656495
+pwd
+#1701656498
+cd /opt/kibana/
+#1701656498
+ls
+#1701656500
+vim kibana.yml 
+#1701656512
+docker restart kibana 
+#1701656542
+iptables -nvL INPUT
+#1701656549
+iptables -D INPUT 11
+#1701656551
+iptables -D INPUT 10
+#1701656553
+iptables -nvL INPUT
+#1701656558
+docker ps
+#1701656563
+pwd
+#1701656572
+curl localhost:5601
+#1701656580
+curl localhost:9200
+#1701656604
+curl localhost:5601/_cluster/health?pretty
+#1701656607
+curl localhost:5601/_cluster
+#1701656618
+curl localhost:9200/_cluster
+#1701656628
+curl localhost:9200/_cluster/health?pretty
+#1701656656
+curl localhost:9200/_cat/indexes?pretty
+#1701656661
+curl localhost:9200/_cat/nodes?pretty
+#1701656665
+pwd
+#1701656666
+ls
+#1701656668
+vim kibana.yml 
+#1701656686
+cd /root/prometheus/elastic/
+#1701656687
+ls
+#1701656694
+docker-compose -f kibana-compose.yml up -d
+#1701656706
+docker-compose -f kibana-compose.yml down
+#1701656716
+ps -ef|grep kibana
+#1701656721
+docker ps
+#1701656729
+docker stop d929765e137b
+#1701656777
+systemctl stop docker.socket 
+#1701656781
+docker ps
+#1701656786
+systemctl start docker.socket 
+#1701656788
+docker ps
+#1701656810
+init 6
+#1701657016
+ls
+#1701657020
+cd prometheus/elastic/
+#1701657020
+ls
+#1701657021
+cd elastic/
+#1701657022
+ls
+#1701657024
+vim es_gen.sh 
+#1701657101
+ls
+#1701657104
+docker ps
+#1701657111
+curl localhost:9200
+#1701657114
+curl localhost:5601
+#1701657124
+cd ..
+#1701657125
+ls
+#1701657132
+docker-compose -f logstash-compose.yml down
+#1701657223
+ls
+#1701657228
+docker logs kibana 
+#1701657235
+docker ps
+#1701657247
+docker-compose top
+#1701657260
+docker-compose -f kibana-compose.yml top
+#1701657267
+docker-compose -f logstash-compose.yml top
+#1701657270
+docker ps
+#1701657275
+free -h
+#1701657283
+pwd
+#1701657283
+ls
+#1701657285
+cd elastic/
+#1701657285
+ls
+#1701657288
+cat es_gen.sh 
+#1701657296
+sh es_gen.sh 
+#1701657304
+vim es_gen.sh 
+#1701657312
+sh es_gen.sh 
+#1701657336
+vim es_gen.sh 
+#1701657345
+sh es_gen.sh 
+#1701657362
+ls
+#1701657365
+vim es_gen.sh 
+#1701657395
+curl http://192.168.226.20:9200
+#1701657402
+vim es_gen.sh 
+#1701657423
+sh es_gen.sh 
+#1701657513
+ls
+#1701657515
+vim es_gen.sh 
+#1701657543
+sh es_gen.sh 
+#1701657571
+curl -X DELETE http://192.168.226.20:9200/test_index
+#1701657617
+ls
+#1701657619
+sh es_gen.sh 
+#1701657690
+pip3 list|grep elasti
+#1701657728
+pip3 install elasticsearch==7.2.0
+#1701657773
+pip3 install --user root elasticsearch==7.8.0
+#1701657788
+pip3 install --user root elasticsearch==7.1.0
+#1701657827
+pip3 install elasticsearch==7.1.0
+#1701657840
+sh es_gen.sh 
+#1701657908
+ls
+#1701657912
+vim es_gen.sh 
+#1701658107
+vim logstash-random-data.conf
+#1701658182
+curl localhost:9200/test_index/_search | jq .hits.hits[:2]
+#1701658189
+curl localhost:9200/test_index/_search
+#1701658333
+pwd
+#1701658339
+cd /opt/kibana/
+#1701658339
+ls
+#1701658341
+vim kibana.yml 
+#1701658354
+docker ps
+#1701658373
+docker restart kibana
+#1701658449
+curl localhost:9200/test_index/_search | jq .hits.hits[:2]
+#1701658457
+curl localhost:9200/test_index/_search | jq
+#1701658463
+curl localhost:9200/test_index/_search
+#1701658482
+jq
+#1701658487
+yum install -y jq
+#1701658557
+history|grep elastic
+#1701658670
+pwd
+#1701658671
+ls
+#1701658672
+cat kibana.yml 
+#1701658834
+yum install -y jq
+#1701658863
+yum install epel-release
+#1701658868
+yum list jq
+#1701658952
+curl localhost:9200/test_index/_search | python -m json.tool
+#1701659009
+curl -sS localhost:9200/test_index/_search |python -m json.tool
+#1701659022
+curl -sS localhost:9200/test_index/_count
+#1701659244
+ls
+#1701659250
+cd /root/prometheus/elastic/
+#1701659251
+ls
+#1701659252
+cd elastic/
+#1701659253
+ls
+#1701659257
+wget https://rhel.pkgs.org/7/atomic-x86_64/jq-1.6-2.el7.x86_64.rpm.html
+#1701659419
+wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/j/jq-1.6-2.el7.x86_64.rpm
+#1701659422
+ls
+#1701659440
+yum localinstall jq-1.6-2.el7.x86_64.rpm 
+#1701659450
+jq
+#1701659468
+wget http://dl.fedoraproject.org/pub/epel/7/x86_64/
+#1701659470
+ls
+#1701659473
+rm -f index.html 
+#1701659474
+ls
+#1701659482
+rpm -ivh jq-1.6-2.el7.x86_64.rpm 
+#1701659491
+yum localinstall jq-1.6-2.el7.x86_64.rpm 
+#1701659502
+yum localinstall jq-1.6-2.el7.x86_64.rpm --skip-broken
+#1701659505
+jq
+#1701659585
+yum install oniguruma
+#1701660875
+date
+#1701660933
+ls
+#1701660936
+cd prometheus/elastic/
+#1701660936
+ls
+#1701660937
+cd elastic/
+#1701660938
+ls
+#1701660943
+wget https://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/o/oniguruma-6.8.2-2.el7.x86_64.rpm
+#1701660966
+ls
+#1701660974
+yum localinstall oniguruma-6.8.2-2.el7.x86_64.rpm -y
+#1701660984
+yum localinstall -y jq-1.6-2.el7.x86_64.rpm 
+#1701660987
+jq
+#1701660988
+ls
+#1701660993
+du -hs .
+#1701660994
+ls
+#1701660999
+history|grep jq
+#1701661012
+curl localhost:9200/test_index/_search | jq .hits.hits[:2]
+#1701661036
+curl localhost:9200/test_index/_search | jq .hits.hits[:10]
+#1701661050
+ls
+#1701661053
+cd ..
+#1701661053
+ls
+#1701661061
+tar -czf elastic.tar.gz elastic
+#1701661067
+tar -tf elastic.tar.gz 
+#1701661072
+sz elastic.tar.gz 
+#1701661124
+history|tail -10
+#1701661130
+history|tail -20
+#1701661183
+date
+#1701661192
+systemctl status chronyd
+#1701661208
+chronyc --help
+#1701661216
+chronyd --help
+#1701661224
+history|grep chrony
+#1701661232
+chronyc sources -v
+#1701661241
+ping 120.25.115.20
+#1701661246
+systemctl status chronyd
+#1701661273
+chronyc tracking
+#1701661278
+date
+#1701662990
+systemctl reload chronyd
+#1701662997
+systemctl status chronyd
+#1701663008
+systemctl start chronyd
+#1701663010
+systemctl status chronyd
+#1701663015
+date
+#1701667726
+ntpdate ntp1.nim.ac.cn
+#1701667736
+date
+#1701667761
+ping ntp1.nim.ac.cn
+#1701667768
+ping ntp2.nim.ac.cn
+#1701667776
+ping ntp1.baidu.com
+#1701667789
+ping ntp.neu.edu.cn
+#1701667821
+ping ntp1.ntsc.ac.cn
+#1701667830
+ping ntp1.ict.ac.cn
+#1701667855
+ping time1.cloud.tencent.com
+#1701667867
+ntpdate time1.cloud.tencent.com
+#1701667882
+ping ntp1.chinanetcenter.com
+#1701667889
+ping ntp1.huaweicloud.com
+#1701667899
+vim /etc/chrony.conf 
+#1701667924
+systemctl restart chronyd
+#1701667933
+ping ntp1.ch
+#1701667940
+ping ina-mobile.com
+#1701667945
+vim /etc/resolv.conf 
+#1701667965
+ping ntp2.china-mobile.com
+#1701667984
+ping ntp3.china-mobile.com
+#1701667995
+ping ntp5.china-mobile.com
+#1701668012
+vim /etc/ntp.conf 
+#1701668040
+ntpq -p
+#1701668130
+cd prometheus/
+#1701668130
+ls
+#1701668132
+cd elastic/
+#1701668133
+ls
+#1701668139
+rm -f elastic.tar.gz 
+#1701668142
+cd elastic/
+#1701668142
+ls
+#1701668161
+docker cp logstash-random-data.conf logstash:/root
+#1701668175
+docker exec -it --user 0 logstash bash
+#1701668178
+docker ps
+#1701668188
+ls
+#1701668190
+cd ..
+#1701668191
+ls
+#1701668195
+docker start logstash 
+#1701668200
+docker exec -it --user 0 logstash bash
+#1701668555
+docker ps
+#1701668567
+docker logs logstash 
+#1701668609
+docker exec -it --user 0 logstash bash
+#1701670516
+ls
+#1701670517
+pwd
+#1701670520
+cd test/
+#1701670520
+ls
+#1701670526
+vim md5_test.sh
+#1701670756
+ls
+#1701670761
+mkdir md5_test
+#1701670771
+mv md5_test.sh md5_test
+#1701670776
+mv md5_test md5
+#1701670779
+cd md5/
+#1701670779
+ls
+#1701670781
+vim md5_test.sh 
+#1701670796
+touch test.jar
+#1701670805
+md5sum test.jar 
+#1701670822
+md5sum test.jar |awk '{print $1}'
+#1701670828
+md5sum test.jar |awk '{print $1}' > md5.txt
+#1701670832
+cat md5.txt 
+#1701670833
+ls
+#1701670836
+vim md5_test.sh 
+#1701670867
+ls
+#1701670871
+vim md5.txt 
+#1701670876
+vim md5_test.sh 
+#1701670909
+sh -x md5_test.sh 
+#1701670917
+vim +10 md5_test.sh 
+#1701670981
+sh -x md5_test.sh 
+#1701670989
+sh md5_test.sh 
+#1701670992
+ls
+#1701671001
+echo "1" >> test.jar 
+#1701671004
+sh md5_test.sh 
+#1701671051
+vim +10 md5_test.sh 
+#1701671080
+ls
+#1701671088
+vim md5_test.sh 
+#1701671377
+ls
+#1701671381
+cat md5_test.sh 
+#1701671394
+echo "" > test.jar 
+#1701671398
+sh md5_test.sh 
+#1701671429
+ls
+#1701671431
+cat md5.txt 
+#1701671436
+md5sum test.jar 
+#1701671443
+md5sum --help
+#1701671552
+ls
+#1701671557
+md5sum -c test.jar 
+#1701671667
+cat md5.txt 
+#1701671676
+md5sum -c md5.txt 
+#1701671691
+vim md5.txt 
+#1701671704
+md5sum -c md5.txt 
+#1701671712
+ls
+#1701671721
+touch {1..3}.txt 
+#1701671739
+md5sum * > data.md5
+#1701671745
+md5sum -c data.md5 
+#1701671761
+cat data.md5 
+#1701671777
+grep -q 68b329da9893e34099c7d8ad5cb9c940 data.md5 
+#1701671782
+echo $?
+#1701671822
+ls
+#1701671828
+vim md5_test.sh 
+#1701671839
+ls
+#1701671853
+vim md5_list.sh
+#1701671866
+cp md5_test.sh md5_list.sh
+#1701671869
+vim md5_list.sh 
+#1701671909
+sh md5_list.sh 
+#1701671915
+vim md5_test.sh 
+#1701671957
+sh md5_test.sh 
+#1701671961
+vim md5_list.sh 
+#1701672324
+ls
+#1701672329
+sh md5_list.sh 
+#1701672376
+cat md5_list.sh 
+#1701672389
+vim md5_list.sh 
+#1701672433
+ls
+#1701672439
+vim md5_list.sh 
+#1701672456
+md5sum -c data.md5 
+#1701672499
+ls
+#1701672594
+cat md5_list.sh 
+#1701672628
+ls
+#1701672635
+mkdir 111
+#1701672638
+cd 111
+#1701672649
+touch {4..6}.txt
+#1701672654
+mkdir 222
+#1701672656
+cd 222/
+#1701672664
+touch {7..9}.txt
+#1701672665
+ls
+#1701672667
+cd ../..
+#1701672668
+ls
+#1701672697
+find . -type f -print0 | xargs -0 md5sum > data.md5
+#1701672700
+cat data.md5 
+#1701672711
+sh md5_list.sh 
+#1701672719
+echo $?
+#1701672987
+ls
+#1701672992
+cat md5_list.sh 
+#1701673633
+ls
+#1701673637
+vim md5_list.sh 
+#1701674447
+ls
+#1701674453
+md5sum -w data.md5 
+#1701674457
+md5sum -w 
+#1701674723
+md5sum -c data.md5 
+#1701674726
+md5sum -c data.md5 -w
+#1701674750
+history
+#1701675382
+ls -m
+#1701675385
+ls
+#1701675924
+ls -q
+#1701675928
+ls -p
+#1701675941
+ls -L
+#1701675946
+cd /bin/
+#1701675946
+ls
+#1701675949
+ls -L
+#1701675970
+cd -
+#1701675973
+ls -lN
+#1701676000
+ls -lo
+#1701676041
+init 0
+#1701738023
+ls
+#1701738045
+pwd
+#1701738275
+ntpdate 172.16.19.164
+#1701738312
+ping no server suitable for synchronization found
+#1701738319
+ping 172.16.19.164
+#1701738364
+ntpq -c version
+#1701738412
+ntpdate -d 172.16.19.164
+#1701738751
+date
+#1701738757
+vim /etc/ntp.conf 
+#1701739018
+systemctl status ntpd
+#1701739246
+date
+#1701739252
+systemctl status chronyd
+#1701739259
+systemctl stop chronyd
+#1701739265
+systemctl start ntpd
+#1701739272
+systemctl status ntpd
+#1701739292
+date -s "8:00:00"
+#1701734401
+date
+#1701744061
+init 0
+#1701823274
+date
+#1701823670
+ls
+#1701823672
+pwd
+#1701823676
+cd docker/
+#1701823676
+ls
+#1701823778
+pwd
+#1701823781
+cat /etc/hosts
+#1701823786
+cd ..
+#1701823787
+ls
+#1701823791
+cd shell_test/
+#1701823792
+ls
+#1701823805
+pwd
+#1701823809
+basename .
+#1701823819
+basename /root/shell_test/pid_source.sh 
+#1701823825
+basename /root/shell_*
+#1701823832
+dirname .
+#1701823837
+dirname /root/shell_test/
+#1701823841
+dirname /root/shell_test/pid_source.sh 
+#1701823848
+ls
+#1701823857
+vim modify_hosts.sh
+#1701824035
+date -%Y%m%d%H%M
+#1701824041
+date +%Y%m%d%H%M
+#1701824049
+vim modify_hosts.sh 
+#1701824064
+sh -nv modify_hosts.sh 
+#1701824078
+cat /etc/hosts
+#1701824091
+sh modify_hosts.sh 
+#1701824102
+cat /etc/hosts
+#1701824115
+vim modify_hosts.sh 
+#1701824144
+sed "$1d" /etc/hosts
+#1701824153
+sed -i "$1d" /etc/hosts
+#1701824156
+cat /etc/hosts
+#1701824166
+cp /tmp/hosts.202312060854 /etc/hosts
+#1701824180
+cat /etc/hosts
+#1701824195
+cp /tmp/hosts.202312060854 /etc/hosts
+#1701824200
+cat /etc/hosts
+#1701824228
+sh modify_hosts.sh 
+#1701824233
+cat /etc/hosts
+#1701824238
+sh modify_hosts.sh 
+#1701824241
+cat /etc/hosts
+#1701824250
+sed "$d" /etc/hosts
+#1701824266
+sed -n "$d" /etc/hosts
+#1701824322
+sed -i "$d" /etc/hosts
+#1701824324
+cat /etc/hosts
+#1701824341
+sed -n '$d' /etc/hosts
+#1701824345
+sed -i '$d' /etc/hosts
+#1701824347
+cat /etc/hosts
+#1701824588
+ls
+#1701824601
+grep -nl "{" *
+#1701824614
+sed -n 's/^[^#].*${\(.*\)}.*/\1/p' echo_hello.sh 
+#1701824617
+cat echo_hello.sh 
+#1701824628
+cat find_ip.py 
+#1701824633
+ls
+#1701824647
+cat modify_hosts.sh 
+#1701824666
+sed -n 's/^[^#].*${\(.*\)}.*/\1/p' modify_hosts.sh 
+#1701824734
+vim modify_hosts.sh 
+#1701824770
+sed -n 's/^[^#].*${\(.*\)}.*/\1/p' modify_hosts.sh 
+#1701824777
+cat modify_hosts.sh 
+#1701824807
+ls
+#1701824810
+vim modify_hosts.sh 
+#1701824837
+cd /tmp/
+#1701824838
+ls
+#1701824842
+cat hosts.20231206085
+#1701824850
+cat hosts.202312060854
+#1701824854
+cat hosts.202312060857
+#1701824862
+ls
+#1701824864
+cd
+#1701824865
+pwd
+#1701824918
+cd tomcat/
+#1701824919
+ls
+#1701824920
+cd bin/
+#1701824921
+ls
+#1701824925
+cat startup.sh
+#1701824983
+uname
+#1701825192
+gsed
+#1701825334
+cd
+#1701825335
+ls
+#1701825337
+cd shell_test/
+#1701825337
+ls
+#1701825344
+chmod +x *.sh
+#1701825345
+ls
+#1701825351
+cd ..
+#1701825351
+ls
+#1701825352
+cd test/
+#1701825353
+ls
+#1701825356
+cat hosts.txt 
+#1701825372
+sed 's/^/hello&/g' hosts.txt 
+#1701825379
+sed -n 's/^/hello&/g' hosts.txt 
+#1701825383
+sed -n 's/^/hello/g' hosts.txt 
+#1701825388
+sed  's/^/hello/g' hosts.txt 
+#1701825394
+sed  's/^/hello/' hosts.txt 
+#1701825443
+sed -n 's/^/hello/' hosts.txt 
+#1701825457
+sed -n '$ihello' hosts.txt 
+#1701825464
+sed -n '$chello' hosts.txt 
+#1701825469
+sed '$chello' hosts.txt 
+#1701825472
+sed '$ihello' hosts.txt 
+#1701825508
+sed '=' hosts.txt 
+#1701825640
+sed 'N=' hosts.txt 
+#1701825772
+sed 'N;=' hosts.txt 
+#1701825786
+sed '=;s/\n//' hosts.txt 
+#1701827149
+find / -name "*.iso"
+#1701827502
+pwd
+#1701827504
+ls
+#1701827506
+cd ../shell_test/
+#1701827507
+ls
+#1701827515
+cat te
+#1701827520
+cat test.sh 
+#1701827527
+vim /etc/profile
+#1701827575
+source /etc/profile
+#1701827582
+sh -x test.sh
+#1701827592
+cat test.sh
+#1701827607
+ls
+#1701827612
+vim test.sh 
+#1701827618
+vim /etc/profile
+#1701828121
+sh -x test.sh
+#1701828129
+vim /etc/profile
+#1701828143
+export PS4='+${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
+#1701828146
+sh -x test.sh
+#1701828171
+export PS4='$0.$LINENO+ '
+#1701828173
+sh -x test.sh
+#1701828187
+env|grep PS
+#1701828393
+man grep
+#1701828635
+ls
+#1701828645
+cat grep_test.txt 
+#1701828666
+cat modify_hosts.sh 
+#1701828678
+cat /etc/hosts
+#1701828690
+sh -x modify_hosts.sh 
+#1701828703
+cat /etc/hosts
+#1701828715
+sed -i '$d' /etc/hosts
+#1701828717
+cat /etc/hosts
+#1701828723
+sh -x modify_hosts.sh 
+#1701828734
+cat /etc/hosts
+#1701828737
+sed -i '$d' /etc/hosts
+#1701828916
+date
+#1701828952
+cd
+#1701828955
+ls -A
+#1701828961
+cat .bash_profile 
+#1701828969
+cat ./bashrc
+#1701828975
+cat .bashrc
+#1701828990
+cat .rnd
+#1701828993
+ls
+#1701828996
+ls -A
+#1701829001
+cat .cshrc
+#1701829010
+cd .acme.sh/
+#1701829011
+ls
+#1701829012
+ll
+#1701829015
+cat acme.sh
+#1701829017
+ls
+#1701829023
+cd xguo.com/
+#1701829024
+ls
+#1701829025
+ll
+#1701829031
+cat xguo.com.conf 
+#1701829037
+ls
+#1701829039
+pwd
+#1701829421
+export PS2=">>>"
+#1701829424
+echo hello
+#1701829432
+echo hello world 
+#1701829560
+pwd
+#1701829561
+cd
+#1701829562
+ls
+#1701829564
+cd test/
+#1701829564
+ls
+#1701829566
+cd ..
+#1701829567
+ls
+#1701829569
+cd shell_test/
+#1701829569
+ls
+#1701829572
+vim test.sh
+#1701829597
+sh test.sh
+#1701829648
+cat test.sh
+#1701829818
+history|grep PS4
+#1701829826
+ls
+#1701829829
+vim test.sh 
+#1701829839
+sh test.sh
+#1701829855
+vim test.sh 
+#1701829863
+sh test.sh
+#1701829959
+cat /etc/hosts
+#1701829961
+ls
+#1701829965
+sh modify_hosts.sh 
+#1701829971
+cat /etc/hosts
+#1701829984
+echo -e "hello    world"
+#1701829988
+echo  "hello    world"
+#1701830013
+pwd
+#1701830014
+ls
+#1701830021
+date
+#1701830069
+history
+#1701830177
+history
+#1701830194
+ls
+#1701830196
+pwd
+#1701830206
+history -w his.txt

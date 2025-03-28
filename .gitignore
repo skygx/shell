@@ -1,1 +1,4 @@
 /.idea
+*.tgz
+*.gz
+*.zip

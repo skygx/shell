@@ -1,0 +1,13 @@
+/dev/mapper/centos-root 20645720 1474326 19171394    8% /
+/dev/sda1                 524288     335   523953    1% /boot
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/8b05ab35f074f53ab721f23cc1d8c8b6382bd0bbe23306b12788c874bcf0ee0f/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/3699116f2bb0c90e170a0c31a3066b518219e9616aa293079ae741d46a3b6734/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/654886c63d7dea50ee10ffeaa1b85a2853c929a59ac63d8377eece1fe80e129d/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/7bab9ae71d34d1b4d58948ae95dfa341ae7be81266a7f7a466183d6ffb68ffda/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/5ace9fa7715c0209bcdc35817b2bfd90b0f93b2be652f5897af81e6c9ea72e56/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/4eaa1457cce7f39a8a314bd8a6863b68d9af101450fa84e0d3a806463222a8dc/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/8ace449629292e8d35689cc0fe9cd08c01f88b9bd678ede82c8c7534ec5e27b1/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/80184c24f3201e64c44a0b7de91a271291dddb1a3f7e54c07f4459313dcca3da/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/eff4f44545beae8d90c1dfbf3d2cd1e2718a5bd9006dbc941fea163719ce2005/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/06877f7fab9fb42d7a8647c4618dcbfc5556acba410a493802d65facd66a5f0a/merged
+overlay                 20645720 1474326 19171394    8% /var/lib/docker/overlay2/174d89b3c5b61175d69331366f521d97ae3b8d58217ea74c39a72ba57ca93d57/merged

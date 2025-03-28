@@ -1,0 +1,41 @@
+2024-04-22 16:00:01 start health check
+主机名称：prom
+操作系统：CentOS Linux release 7.9.2009 (Core)
+系统内核：3.10.0-1160.53.1.el7.x86_64
+系统语言：en_US
+系统编码：UTF-8
+当前时间：2024-04-22_16:00:01
+启动时间：2024-04-22 11:46
+运行时间：3:06 
+CPU架构：x86_64
+CPU型号： AMD Ryzen 5 PRO 2500U w/ Radeon Vega Mobile Gfx
+CPU数量：2 颗
+CPU核心： 2 核
+CPU线程：4 线程
+CPU用户占比：9.60%
+CPU内核占比：4.61%
+CPU使用占比：14.21%
+CPU可用占比：85.66%
+内存合计：7802 MB 
+内存使用：3036 MB
+Mem使用率： 38.00%
+swap合计：255 MB 
+swap使用：2 MB
+swap使用率： 0%
+磁盘使用率：分区 /dev/mapper/centos-root    , 合 计 59G   已用 50G    剩余 9.1G   使用占比 85%
+磁盘使用率：分区 /dev/sda1                  , 合 计 1014M 已用 189M   剩余 826M   使用占比 19%
+
+Port：80  Unknown
+Port：3306  Unknown
+Port：10000  Unknown
+Port：18080  Unknown
+Process：elastic  on
+Process：zookeeper  down
+Process：mysqld  on
+Process：nginx  on
+Check_URL：http://192.168.226.20:80  Unreachable 
+网络连接状态：LISTEN          数量：20
+网络连接状态：ESTABLISHED     数量：52
+网络连接状态：TIME_WAIT       数量：82
+磁盘：sdb    IO使用率：0.16 
+磁盘：sda    IO使用率：0.56 

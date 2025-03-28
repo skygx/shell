@@ -1,41 +1,41 @@
-2024-02-02 12:32:52 start health check
+2024-04-09 13:31:48 start health check
 主机名称：prom
 操作系统：CentOS Linux release 7.9.2009 (Core)
-系统内核：3.10.0-1160.53.1.el7.x86_64
+系统内核：5.4.272-1.el7.elrepo.x86_64
 系统语言：en_US
 系统编码：UTF-8
-当前时间：2024-02-02_12:32:52
-启动时间：2024-02-02 08:59
-运行时间：2:07 
+当前时间：2024-04-09_13:31:48
+启动时间：2024-04-09 09:14
+运行时间：1:22 
 CPU架构：x86_64
 CPU型号： AMD Ryzen 5 PRO 2500U w/ Radeon Vega Mobile Gfx
 CPU数量：2 颗
 CPU核心： 2 核
 CPU线程：4 线程
-CPU用户占比：3.97%
-CPU内核占比：1.92%
-CPU使用占比：5.89%
-CPU可用占比：94.11%
-内存合计：7802 MB 
-内存使用：3090 MB
-Mem使用率： 39.00%
-swap合计：0 MB 
-swap使用：0 MB
-swap未使用
-磁盘使用率：分区 /dev/mapper/centos-root    , 合 计 59G   已用 51G    剩余 8.2G   使用占比 87%
-磁盘使用率：分区 /dev/sda1                  , 合 计 1014M 已用 189M   剩余 826M   使用占比 19%
+CPU用户占比：5.96%
+CPU内核占比：4.02%
+CPU使用占比：9.98%
+CPU可用占比：89.90%
+内存合计：7922 MB 
+内存使用：4518 MB
+Mem使用率： 57.00%
+swap合计：255 MB 
+swap使用：100 MB
+swap使用率： 39.00%
+磁盘使用率：分区 /dev/mapper/centos-root    , 合 计 59G   已用 36G    剩余 24G    使用占比 61%
+磁盘使用率：分区 /dev/sdb1                  , 合 计 1014M 已用 223M   剩余 792M   使用占比 22%
 
-Port：80  LISTEN
+Port：80  Unknown
 Port：3306  Unknown
 Port：10000  Unknown
-Port：18080  Unknown
+Port：18080  LISTEN
 Process：elastic  on
-Process：zookeeper  down
+Process：zookeeper  on
 Process：mysqld  on
 Process：nginx  on
-Check_URL：http://192.168.226.20:80 401 Unauthorized
-网络连接状态：LISTEN          数量：35
-网络连接状态：ESTABLISHED     数量：65
-网络连接状态：TIME_WAIT       数量：170
-磁盘：sdb    IO使用率：0.51 
-磁盘：sda    IO使用率：0.77 
+Check_URL：http://192.168.226.20:80  Unreachable 
+网络连接状态：LISTEN          数量：37
+网络连接状态：ESTABLISHED     数量：96
+网络连接状态：TIME_WAIT       数量：17
+磁盘：sda    IO使用率：0.72 
+磁盘：sdb    IO使用率：1.97 

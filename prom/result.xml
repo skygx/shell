@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 6.40 scan initiated Tue Apr  9 14:36:14 2024 as: nmap -p 22 -iL iplist.txt -oX result.xml -->
+<nmaprun scanner="nmap" args="nmap -p 22 -iL iplist.txt -oX result.xml" start="1712644574" startstr="Tue Apr  9 14:36:14 2024" version="6.40" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="22"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1712644581" endtime="1712644582"><status state="up" reason="localhost-response" reason_ttl="0"/>
+<address addr="192.168.226.20" addrtype="ipv4"/>
+<hostnames>
+<hostname name="prom" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="118" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1712644574" endtime="1712644582"><status state="up" reason="reset" reason_ttl="128"/>
+<address addr="172.16.19.164" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="1607" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1712644574" endtime="1712644582"><status state="up" reason="reset" reason_ttl="128"/>
+<address addr="172.16.19.165" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+</ports>
+<times srtt="1690" rttvar="5000" to="100000"/>
+</host>
+<runstats><finished time="1712644582" timestr="Tue Apr  9 14:36:22 2024" elapsed="7.43" summary="Nmap done at Tue Apr  9 14:36:22 2024; 3 IP addresses (3 hosts up) scanned in 7.43 seconds" exit="success"/><hosts up="3" down="0" total="3"/>
+</runstats>
+</nmaprun>

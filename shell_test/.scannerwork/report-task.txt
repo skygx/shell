@@ -1,0 +1,6 @@
+projectKey=shell_test
+serverUrl=http://192.168.226.20:9000
+serverVersion=8.9.6.50800
+dashboardUrl=http://192.168.226.20:9000/dashboard?id=shell_test
+ceTaskId=AY4_8_SmidINVrvzR9CN
+ceTaskUrl=http://192.168.226.20:9000/api/ce/task?id=AY4_8_SmidINVrvzR9CN

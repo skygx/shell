@@ -1,0 +1,1 @@
+{ "hostname": "prom", "ip": "192.168.226.20", "start_time": "2024-04-09 09:14", "run_time": "1:50 ", "cpu_util": "6", "mem_util": 56.00, "swap_util": "49.00", "disk_util": "/dev/mapper/centos-root: 62% /dev/sdb1: 22%", "net_conn": "LISTEN:37 ESTABLISHED:97 TIME_WAIT:99", "io_util": "sda:0.63 sdb:1.81" }
